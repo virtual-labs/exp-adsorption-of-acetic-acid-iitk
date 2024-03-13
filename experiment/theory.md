@@ -5,7 +5,7 @@ Physisorption or physical adsorption is a type of adsorption in which the adsorb
 Adsorption is usually described through adsorption isotherms, that is, functions which connect the amount of adsorbate on the adsorbent, with its pressure (if gas) or concentration (if liquid). Several models are used to describe the process of adsorption, namely Freundlich isotherm, Langmuir isotherm, BET isotherm, etc. Here we will deal with Langmuir isotherm.<br>
 
 For liquids (adsorbate) adsorbed on solids (adsorbent), the Langmuir isotherm can be expressed by:<br> 
-<image scr ="photos/fig1.png"><br>
+<iimg scr ="images/fig1.png"><br>
 Where; m is the substance amount of adsorbate adsorbed per gram (or kg) of the adsorbent, the unit is mol g–1 (or mol.kg–1). Amax is the maximal substance amount of adsorbate per gram (or kg) of the adsorbent, the unit is mol g-1 (or mol kg–1), k is the adsorption constant (mol–1 dm3 ) and c is the concentration of adsorbate in liquid (mol dm–3 ). By plotting 1/m vs 1/c we get a straight line with slope 1/kAmax and intercept 1/Amax (by using equation (2)). By this we can easily calculate adsorption Constant ‘k’.<br>
 
 In practice, activated carbon is used as an adsorbent for the adsorption of mainly organic compounds. It is a material with an exceptionally high surface area. Just one gram of activated carbon has a surface area of approximately 500 m² (for comparison, a tennis court is about 260 m²).<br>
