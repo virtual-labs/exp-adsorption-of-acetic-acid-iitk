@@ -2,12 +2,29 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "1)Adsorption is a process that occurs when?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Only gas solute accumulates on the surface of a solid",
+        "b": "Only liquid solute accumulates on the surface of a solid.",
+        "c": "Substance diffuses into liquid or solid from a solution",
+        "d": "Gas or liquid accumulates on the surface of a solid or a liquid forming a molecular or atomic film."
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2)Adsorption is a consequence of?",
+      "answers": {
+        "a": "Surface Energy",
+        "b": "Kinetic Energy",
+        "c": "Potential Energy",
+        "d": "Translational energy"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -19,12 +36,29 @@
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "3)Physisorption is a type in which?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Van der Waals interation takes place",
+        "b": "Hydrogen bonding takes place",
+        "c": "Dipole-Dipole interacton takes place",
+        "d": "Dipole-Induced dipole takes place"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5)Which adsorption takes place in case of adsorption of acetic acid by charcoal?",
+      "answers": {
+        "a": "BET isotherm",
+        "b": "Freundlich isotherm",
+        "c": "Langmuir isotherm",
+        "d": "None of the above"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",

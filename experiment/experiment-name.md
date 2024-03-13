@@ -1,1 +1,1 @@
-## Experiment name
+## Adsorption of acetic acid by charcoal
