@@ -2,12 +2,63 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "1)According to Langmuir adsorption Isotherm, the adsorbed layer is?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Bilayer",
+        "b": "Multilayer",
+        "c": "Monolayer",
+        "d": "Tetralayer"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2)Which indicator was used for the standardization of NaOH by oxalic acid?",
+      "answers": {
+        "a": "Methyl Red",
+        "b": "Bromophenol blue",
+        "c": "Phenolphthalein",
+        "d": "None of the Above"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3)The Langmuir adsorption isotherm can be expressed as?",
+      "answers": {
+        "a": "x/m=kP1/n",
+        "b": "m= A<sub>max ke</sub>/1=kc",
+        "c": "x=P1/n",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4)According to Langmuir Adsorption Isotherm, the equilibrium between adsorbate and adsorbent will be?",
+      "answers": {
+        "a": "Dynamic Equilibrium",
+        "b": "Static equilibrium",
+        "c": "No Such equilibrium",
+        "d": "Mixture of Static & dynamic Equilibrium"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -19,12 +70,12 @@
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "5)From Langmuir adsorption isotherm plot of 1/m vs 1/c will be?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Straight line",
+        "b": "Hyperbola",
+        "c": "Parabola",
+        "d": "None of the Above"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -32,7 +83,7 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]
