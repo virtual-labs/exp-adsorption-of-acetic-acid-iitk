@@ -1,1 +1,1211 @@
 /* You CSS goes in here */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  
+    /*background-image: url(/image/my-lab.png);*/
+  }
+  
+  #container {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  #instruction {
+    display: flex;
+   
+    width: 100%;
+    height: 6.4%;
+    font-family: "Croissant One", cursive;
+    color: rgb(229, 52, 52);
+  }
+  
+  #instruction h1 {
+    font-size: 4vh;
+    /* font-size: 2.5vw; */
+  }
+  
+   #update{
+    padding-left: 1%;
+    font-size: 2vh;
+    font-size: 2vw;
+    font-weight: 10%;
+    font-family: "Croissant One", cursive;
+  }
+  
+  #backg {
+    height: 93%;
+    width: 100%;
+    position: absolute;
+    /* background-image: url("/image/my-lab1.png"); */
+    background-size: cover;
+  }
+  
+  #lab {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #beaker {
+    height: 93%;
+    width: 100%;
+    position: relative;
+  }
+  #hindi{
+    position:absolute;
+    border-radius: 40%;
+    padding: 1%;
+    font-size: 1vw;
+    left: 45%;
+    top: 50%;
+    border: none;
+    background-color: rgb(226, 239, 33);
+    box-shadow: 2px 2px 0px 1px;
+    font-weight: 1000;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+#hindi:active{
+    scale: 0.9;
+}
+
+#eng{
+    position:absolute;
+    border-radius: 40%;
+    padding: 1%;
+    font-size: 1vw;
+    left: 55%;
+    top: 50%;
+    border: none;
+    background-color: rgb(239, 33, 33);
+    box-shadow: 2px 2px 0px 1px;
+    font-weight: 1000;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#eng:active{
+    scale: 0.9;
+}
+
+#lselector{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 2vw;
+    color: white;
+    left: 41%;
+    top: 40%;
+}
+
+#langselector{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+}
+
+  
+  #next {
+    position: fixed;
+    height: 5%;
+    width: 6%;
+    border-radius: 14px;
+    bottom: 8%;
+    left: 90%;
+    background-color: hsl(287, 80%, 77%);
+    color:red;
+    box-sizing: border-box;
+    box-shadow: 6px 6px 9px 0.5px rgb(65, 65, 65);
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    border-style: none;
+    transition: all;
+    cursor: pointer;
+  }
+  
+  
+ #flask1{
+   transition: all;
+  width: 7%;
+  height: 30%;
+  top: 37%;
+  left: 13%;
+  position: absolute;
+  visibility: visible;
+  transition-duration: 1.5s;
+  
+ }
+ #flasksolution{
+  transition: all;
+ width: 7%;
+ height: 7%;
+ top: 60%;
+ left: 12.8%;
+ position: absolute;
+ transition-duration: 1.5s;
+ visibility: visible;
+ 
+}
+ #flask22{
+  transition: all;
+  width: 7%;
+  height: 30%;
+  top: 37%;
+  left: 20%;
+  position: absolute;
+  visibility: visible;
+
+ }
+ #conicaflask1{
+  transition: all;
+  width: 6%;
+  height: 20%;
+  top: 46%;
+  left: 51%;
+  position: absolute;
+  visibility: visible;
+
+ }
+ #conicaflask2{
+  transition: all;
+  width: 6%;
+  height: 20%;
+  top: 46%;
+  left: 58%;
+  position: absolute;
+  visibility: visible;
+
+ }
+ #conicaflask3{
+  transition: all;
+  width: 6%;
+  height: 20%;
+  top: 46%;
+  left:  65%;
+  position: absolute;
+  visibility: visible;
+
+
+ }
+ #activatordeoper{
+  transition: all;
+  width: 3.3%;
+  height: 20%;
+  top: 40.5%;
+  left: 74.4%;
+  position: absolute;
+  visibility: visible;
+ }
+ #activaterbottel{
+  transition: all;
+  width: 4%;
+  height: 15%;
+  top: 50%;
+  left:  74%;
+  position: absolute;
+  visibility: visible;
+ }
+ #acetic-beaker{
+  transition: all;
+  width: 7%;
+  height: 18%;
+  top: 46%;
+  left:  29%;
+  position: absolute;
+  visibility: visible;
+ }
+ #masurwater{
+  transition: all;
+  width: 1.9%;
+  height: 13%;
+  top: 51.8%;
+  left:  41%;
+  transition-duration: 1.5s;
+  position: absolute;
+  visibility: hidden;
+ }
+ #masurcylender{
+  transition: all;
+  width: 4%;
+  height: 23%;
+  top: 43%;
+  left:  40%;
+  transition-duration: 1.5s;
+  position: absolute;
+  visibility: visible;
+ }
+ #mkippi{
+  transition: all;
+  width: 4.5%;
+  height: 15%;
+  top: 35%;
+  left:  40%;
+  position: absolute;
+  visibility: hidden;
+ }
+ #fkippi1{
+  transition: all;
+  width: 4.5%;
+  height: 15%;
+  top: 38%;
+  left:  52%;
+  position: absolute;
+  visibility: hidden;
+ }
+ #fkippi2{
+  transition: all;
+  width: 4.5%;
+  height: 15%;
+  top: 38%;
+  left:  59%;
+  position: absolute;
+  visibility: hidden;
+ }
+ #fkippi3{
+  transition: all;
+  width: 4.5%;
+  height: 15%;
+  top: 38%;
+  left:  66%;
+  position: absolute;
+  visibility: hidden;
+ }
+ #mdrop{
+  transition: all;
+  width: 1.5%;
+  height: 4%;
+  top: 33%;
+  left:  41%;
+  position: absolute;
+  visibility: hidden;
+ }
+ #f1drop{
+  transition: all;
+ width: 1.5%;
+  height: 4%;
+  top: 36%;
+  left:  53%;
+  position: absolute;
+  visibility: hidden;
+ }
+ #f2drop{
+  transition: all;
+  width: 1.5%;
+  height: 4%;
+  top: 36%;
+  left:  60%;
+  position: absolute;
+  visibility: hidden;
+ }
+ #f3drop{
+  transition: all;
+  width: 1.5%;
+  height: 4%;
+  top: 36%;
+  left:  67%;
+  position: absolute;
+  visibility: hidden;
+ }
+ #f1sol{
+  transition: all;
+  width: 6%;
+  height: 5%;
+  top: 61%;
+  left: 51%;
+  position: absolute;
+  visibility: hidden;
+ }
+ #f2sol{
+  transition: all;
+  width: 6%;
+  height: 5%;
+  top: 61%;
+  left: 58%;
+  position: absolute;
+  visibility: hidden;
+ }
+ #f3sol{
+  transition: all;
+  width: 6%;
+  height: 5%;
+  top: 61%;
+  left: 65%;
+  position: absolute;
+  visibility: hidden;
+ }
+
+ /*    ,,,,,,,,,,,, hover,,,,,,,*/
+
+ #weingimage{
+  transition: all;
+  width: 13%;
+  height: 8%;
+  top: 63%;
+  left: 12%;
+  position: absolute;
+  visibility: visible;
+
+ }
+
+ #hweingimage{
+  transition: all;
+  width: 13%;
+  height: 8%;
+  top: 63%;
+  left: 12%;
+  color: red;
+  position: absolute;
+  
+
+ }
+ #emptyconicalflask{
+  transition: all;
+  width: 5%;
+  height: 20%;
+  top: 41%;
+  left: 23%;
+  position: absolute;
+  visibility: visible;
+
+ }
+ #hemptyconicalflask{
+  transition: all;
+  width: 5%;
+  height: 20%;
+  top: 41%;
+  left: 23%;
+  position: absolute;
+  color: red;
+ 
+
+ }
+ #emptyroundflsk{
+  transition: all;
+  width: 6%;
+  height: 28%;
+  top: 34%;
+  left: 29%;
+  position: absolute;
+  visibility: visible;
+
+ }
+ #hemptyroundflsk{
+  transition: all;
+  width: 6%;
+  height: 28%;
+  top: 34%;
+  left: 29%;
+  position: absolute;
+  color: red;
+  
+
+ }
+ #roundflask1{
+  transition: all;
+  width: 6%;
+  height: 28%;
+  top: 34%;
+  left: 36%;
+  position: absolute;
+  visibility: visible;
+
+ }
+ #hroundflask1{
+  transition: all;
+  width: 6%;
+  height: 28%;
+  top: 34%;
+  left: 36%;
+  position: absolute;
+  color: red;
+
+ }
+ #roundflask2{
+  transition: all;
+  width: 6%;
+  height: 28%;
+  top: 34%;
+  left: 43%;
+  position: absolute;
+  visibility: visible;
+
+ }
+ #hroundflask2{
+  transition: all;
+  width: 6%;
+  height: 28%;
+  top: 34%;
+  left: 43%;
+  position: absolute;
+  color: red;
+
+ }
+ #aceticacidimage{
+  transition: all;
+  width: 6%;
+  height: 15%;
+  top: 46%;
+  left: 50%;
+  position: absolute;
+  visibility: visible;
+
+ }
+ #haceticacidimage{
+  transition: all;
+  width: 6%;
+  height: 15%;
+  top: 46%;
+  left: 50%;
+  position: absolute;
+  color: red;
+
+ }
+ #buretimage{
+  transition: all;
+  width: 9%;
+  height: 33%;
+  top: 27%;
+  left: 58%;
+  position: absolute;
+  visibility: visible;
+
+ }
+ #hburetimage{
+  transition: all;
+  width: 9%;
+  height: 33%;
+  top: 27%;
+  left: 58%;
+  position: absolute;
+  visibility: visible;
+
+ }
+ #filterstand{
+  transition: all;
+  width: 9%;
+  height: 32%;
+  top: 30%;
+  left: 69%;
+  position: absolute;
+  visibility: visible;
+
+ }
+ #hfilterstand{
+  transition: all;
+  width: 9%;
+  height: 32%;
+  top: 30%;
+  left: 69%; 
+  position: absolute;
+  
+
+ }
+ #masurcylenderimage{
+  transition: all;
+  width: 3%;
+  height: 20%;
+  top: 42%;
+  left: 17%;
+  position: absolute;
+  visibility: visible;
+
+ }
+ #hmasurcylenderimage{
+  transition: all;
+  width: 3%;
+  height: 20%;
+  top: 42%;
+  left: 17%;
+  position: absolute;
+
+
+ }
+ #spertulaimage{
+  transition: all;
+  width: 6%;
+  height: 10%;
+  top: 63%;
+  left: 28%;
+  rotate: 30deg;
+  position: absolute;
+  visibility: visible;
+
+ }
+ #hspertulaimage{
+  transition: all;
+  width: 9%;
+  height: 6%;
+  top: 65%;
+  left: 26%;
+  position: absolute;
+
+ }
+ #emptypatrydiskimage{
+  transition: all;
+  width: 6%;
+  height: 3.5%;
+  top: 67%;
+  left: 37%;
+ 
+  position: absolute;
+  visibility: visible;
+
+ }
+ #hemptypatrydiskimage{
+  transition: all;
+  width: 6%;
+  height: 3.5%;
+  top: 67%;
+  left: 37%;
+ 
+  position: absolute;
+ 
+ }
+ #pertydiskimage{
+  transition: all;
+  width: 6%;
+  height: 3.5%;
+  top: 67%;
+  left: 45%;
+  position: absolute;
+  visibility: visible;
+
+ }
+
+ #petrydiskchar{
+  transition: all;
+  width: 6%;
+  height: 5%;
+  top: 63.8%;
+  left: 45%;
+  position: absolute;
+  visibility: visible;
+
+ }
+ #hpetrydiskchar{
+  transition: all;
+  width: 6%;
+  height: 7%;
+  top: 63.8%;
+  left: 45%;
+  position: absolute;
+  visibility: visible;
+
+ }
+ #kippiimage{
+  transition: all;
+  width: 4%;
+  height: 11%;
+  top: 63%;
+  left: 55%;
+  rotate: 60deg;
+  position: absolute;
+  visibility: visible;
+
+ }
+ #hkippiimage{
+  transition: all;
+  width: 4%;
+  height: 11%;
+  top: 63%;
+  left: 55%;
+  rotate: 60deg;
+  position: absolute;
+  visibility: visible;
+
+ }
+ #activatorbottelimage{
+  transition: all;
+  width: 4%;
+  height: 15%;
+  top: 56%;
+  left: 79%;
+ 
+  position: absolute;
+  visibility: visible;
+
+ }
+ #activatordroperimage{
+  transition: all;
+  width: 4%;
+  height: 15%;
+  top: 49%;
+  left: 79%;
+ 
+  position: absolute;
+  visibility: visible;
+
+ }
+ #hactivatordroperimage{
+  transition: all;
+  width: 4%;
+  height: 22%;
+  top: 49%;
+  left: 79%;
+ 
+  position: absolute;
+  visibility: visible;
+
+ }
+ #hovt{
+  position: absolute;
+  font-size: 1.5vw;
+  color:red;
+  background-color: white;
+  border: 1px solid black;
+  transition: all;
+  transition-duration: 0.5s;
+  /*left: 0%;
+  top: 0%;*/
+  visibility: visible;
+}
+
+/********************step2******************************************************************/
+#vflask1{
+
+  width: 7%;
+  height: 20%;
+  left: 19%;
+  top: 49%;
+  position:absolute;
+  transition:all;
+  transition-duration: 2s;
+ 
+}
+
+
+#vflask2{
+
+  width: 7%;
+  height: 20%;
+  left: 29%;
+  top: 49%;
+  position:absolute;
+  transition:all;
+  transition-duration: 2s;
+ 
+}
+
+
+#vflask3{
+
+  width: 7%;
+  height: 20%;
+  left: 38%;
+  top: 49%;
+  position: absolute;
+}
+
+#act1{
+
+  width: 3%;
+  height: 13%;
+  left: 60%;
+  top: 58%;
+  position: absolute;
+  transition:all;
+  transition-duration: 2s;
+}
+#actdroper{
+
+  width: 3%;
+  height: 13%;
+  left: 60%;
+  top: 52%;
+  position: absolute;
+  transition:all;
+  transition-duration: 2s;
+}
+
+#actdrp{
+  width: 2%;
+  height: 4%;
+  left: 21.5%;
+  top: 45%;
+  position: absolute;
+  transition:all;
+  scale:0.9 ;
+  visibility: hidden;
+} 
+#actdrp1{
+  width: 2%;
+  height: 4%;
+  left: 21.5%;
+  top: 59%;
+  position: absolute;
+  transition:all;
+  scale:0.9 ;
+  visibility:hidden;
+}
+#actdrp2{
+  width: 2%;
+  height: 4%;
+  left: 31.5%;
+  top: 45%;
+  position: absolute;
+  transition:all;
+  scale:0.9 ;
+  visibility: hidden;
+} 
+#actdrp3{
+  width: 2%;
+  height: 4%;
+  left: 31.5%;
+  top: 59%;
+  position: absolute;
+  transition:all;
+  scale:0.9 ;
+  visibility:hidden;
+}
+#actdrp4{
+  width: 2%;
+  height: 4%;
+  left: 40.5%;
+  top: 45%;
+  position: absolute;
+  transition:all;
+  scale:0.9 ;
+  visibility:hidden;
+} 
+#actdrp5{
+  width: 2%;
+  height: 4%;
+  left: 40.5%;
+  top: 59%;
+  position: absolute;
+  transition:all;
+  scale:0.9 ;
+  visibility:hidden;
+}
+
+
+
+
+
+
+/******************************************step3************************************/
+ #bgimg{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+ 
+  background-size: cover;
+}
+
+
+#brstand{
+  position: absolute;
+  height: 51vh;
+  width: 12vw;
+  left: 57%;
+  top: 20%;  
+  visibility: visible;
+}
+
+#orgflsk{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14vh;
+  width: 5vw;
+  left: 28%;
+  top: 56%;
+  visibility: visible;
+  animation:  2s ease-in-out infinite;
+}
+
+
+#flask2{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14vh;
+  width: 5vw;
+  left: 38%;
+  top: 56%;  
+  visibility: visible;
+
+}
+#flask3{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14vh;
+  width: 5vw;
+  left: 48%;
+  top: 56%;  
+  visibility: visible;
+}
+
+#knob{
+  height: 2vh;
+  width: 2vw;
+  position: absolute;
+  right: 34%;
+  top: 47%;
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1S;
+  visibility: visible;
+}
+#drop{
+  height: 2vh;
+  width: 1vw;
+  position: absolute;
+  right: 35.2%;
+  top: 54%;
+  transition: all;
+  transition-duration: 1S;
+  visibility: hidden;
+}
+#pink1{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14vh;
+  width: 5vw;
+  left: 62%;
+  top: 56%;
+  opacity: 0%;
+  animation:  2s ease-in-out infinite;
+}
+
+#pink2{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14vh;
+  width: 5vw;
+  left: 62%;
+  top: 56%;
+  opacity: 0%;
+  animation:  2s ease-in-out infinite;
+} 
+#pink3{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14vh;
+  width: 5vw;
+  left: 62%;
+  top: 56%;
+  opacity: 0%;
+  animation:  2s ease-in-out infinite;
+ }
+
+ /****************************step4**************************/
+ #vflask1{
+
+  width: 7%;
+  height: 20%;
+  left: 19%;
+  top: 49%;
+  position:absolute;
+  transition:all;
+  transition-duration: 2s;
+ 
+}
+
+
+#vflask2{
+
+  width: 7%;
+  height: 20%;
+  left: 29%;
+  top: 49%;
+  position:absolute;
+  transition:all;
+  transition-duration: 2s;
+ 
+}
+
+
+#vflask3{
+
+  width: 7%;
+  height: 20%;
+  left: 38%;
+  top: 49%;
+  position: absolute;
+}
+#vflask4{
+width: 7%;
+height: 20%;
+left: 48%;
+top: 49%;
+position: absolute;
+}
+#vflask5{
+width: 7%;
+height: 20%;
+left: 58%;
+top: 49%;
+position: absolute;
+}
+#act{
+
+  width: 3%;
+  height: 13%;
+  left: 70%;
+  top: 58%;
+  position: absolute;
+  transition:all;
+  transition-duration: 2s;
+}
+#droper{
+
+  width: 3%;
+  height: 13%;
+  left: 70%;
+  top: 52%;
+  position: absolute;
+  transition:all;
+  transition-duration: 2s;
+}
+
+#actd{
+  width: 2%;
+  height: 4%;
+  left: 21%;
+  top: 54%;
+  position: absolute;
+  transition:all;
+  scale:0.9 ;
+  visibility: hidden;
+} 
+#actd1{
+  width: 2%;
+  height: 4%;
+  left: 21%;
+  top: 54%;
+  position: absolute;
+  transition:all;
+  scale:0.9 ;
+  visibility: hidden;
+}
+
+#actd1{
+  width: 2%;
+  height: 4%;
+  left: 31%;
+  top: 54%;
+  position: absolute;
+  transition:all;
+  scale:0.9 ;
+  visibility: hidden;
+}
+
+#actd2{
+  width: 2%;
+  height: 4%;
+  left: 40%;
+  top: 54%;
+  position: absolute;
+  transition:all;
+  scale:0.9 ;
+  visibility: hidden;
+}
+
+#actd3{
+width: 2%;
+height: 4%;
+left: 50%;
+top: 54%;
+position: absolute;
+transition:all;
+scale:0.9 ;
+visibility: hidden;
+}
+
+#actd4{
+width: 2%;
+height: 4%;
+left: 60%;
+top: 54%;
+position: absolute;
+transition:all;
+scale:0.9 ;
+visibility: hidden;
+}
+
+
+
+/***************************************step5**************************************/
+
+
+
+
+#brstand1{
+  position: absolute;
+  height: 55vh;
+  width: 16vw;
+  left: 57%;
+  top: 15%;  
+  visibility: visible;
+}
+
+#orgflsk1{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14vh;
+  width: 4vw;
+  left: 20%;
+  top: 56%;
+  visibility: visible;
+  animation:  2s ease-in-out infinite;
+}
+
+
+#flask21{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14vh;
+  width: 4vw;
+  left: 27%;
+  top: 56%;  
+  visibility: visible;
+
+}
+#flask31{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14vh;
+  width: 4vw;
+  left: 34%;
+  top: 56%;  
+  visibility: visible;
+
+}
+#flask41{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14vh;
+  width: 4vw;
+  left: 41%;
+  top: 56%;  
+  visibility: visible;
+
+}
+#flask51{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14vh;
+  width: 4vw;
+  left: 48%;
+  top: 56%;  
+  visibility: visible;
+
+}
+
+#knob1{
+  height: 2vh;
+  width: 2vw;
+  position: absolute;
+  right: 31%;
+  top: 45%;
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1S;
+  visibility: visible;
+}
+#drop111{
+  height: 2vh;
+  width: 1vw;
+  position: absolute;
+  right: 33%;
+  top: 54%;
+  transition: all;
+  transition-duration: 1S;
+  visibility: hidden;
+}
+#pink11{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14vh;
+  width: 4vw;
+  left: 64.5%;
+  top: 56%;
+  opacity: 0%;
+  animation:  2s ease-in-out infinite;
+}
+
+#pink21{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14vh;
+  width: 4vw;
+  left: 64.5%;
+  top: 56%;
+  opacity: 0%;
+  animation:  2s ease-in-out infinite;
+} 
+#pink31{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14vh;
+  width: 4vw;
+  left: 64.5%;
+  top: 56%;
+  opacity: 0%;
+  animation:  2s ease-in-out infinite;
+}
+#pink41{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14vh;
+  width: 4vw;
+  left: 64.5%;
+  top: 56%;
+  opacity: 0%;
+  animation:  2s ease-in-out infinite;
+}
+#pink51{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14vh;
+  width: 4vw;
+  left: 64.5%;
+  top: 56%;
+  opacity: 0%;
+  animation:  2s ease-in-out infinite;
+}
+
