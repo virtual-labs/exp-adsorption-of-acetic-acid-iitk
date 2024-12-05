@@ -10,13 +10,13 @@ Materials & Reagents Required:
 9)	Sodium hydroxide  
 10)	Oxalic Acid (0.1 N)
 11)	Phenolphthalein indicator<br>
-<img scr ="imagesfig2.png"><br>
-<img  scr ="imagesfig3.png"><br>
-<iimg  scr ="images/fig4.png"><br>
-<img  scr ="imagesfig5.png"><br>
-<img  scr ="images/fig6.png"><br>
-<img scr ="images/fig7.png"><br>
-<img scr ="images/fig8.png"><br>
-<img scr ="images/fig9.png"><br>
-<img scr ="images/fig10.png"><br>
-<img scr ="images/fig11.png">
+<img src ="images/fig2.png"><br>
+<img src ="images/fig3.png"><br>
+<img src ="images/fig4.png"><br>
+<img src ="images/fig5.png"><br>
+<img src ="images/fig6.png"><br>
+<img src ="images/fig7.png"><br>
+<img src ="images/fig8.png"><br>
+<img src ="images/fig9.png"><br>
+<img src ="images/fig10.png"><br>
+<img src ="images/fig11.png">
