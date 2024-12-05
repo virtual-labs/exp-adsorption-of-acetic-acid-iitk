@@ -10,7 +10,7 @@
   body {
     height: 100%;
     width: 100%;
-    position: relative;
+    /*position: relative;*/
   
     /*background-image: url(/image/my-lab.png);*/
   }
@@ -29,17 +29,18 @@
     height: 6.4%;
     font-family: "Croissant One", cursive;
     color: rgb(229, 52, 52);
+    position: absolute;
   }
   
   #instruction h1 {
-    font-size: 4vh;
+    font-size:1.7vw;
     /* font-size: 2.5vw; */
   }
   
    #update{
     padding-left: 1%;
-    font-size: 2vh;
-    font-size: 2vw;
+    font-size: 1.7vw;
+    
     font-weight: 10%;
     font-family: "Croissant One", cursive;
   }
@@ -50,6 +51,7 @@
     position: absolute;
     /* background-image: url("/image/my-lab1.png"); */
     background-size: cover;
+    top: 6.7%;
   }
   
   #lab {
@@ -60,8 +62,11 @@
   #beaker {
     height: 93%;
     width: 100%;
-    position: relative;
+    position: absolute;
+    visibility: visible;
+    top: 6.7%;
   }
+
   #hindi{
     position:absolute;
     border-radius: 40%;
@@ -134,6 +139,7 @@
     border-style: none;
     transition: all;
     cursor: pointer;
+    visibility: visible;
   }
   
   
@@ -144,7 +150,40 @@
   top: 37%;
   left: 13%;
   position: absolute;
-  visibility: visible;
+  visibility: hidden;
+  transition-duration: 1.5s;
+  
+ }
+ #sol0{
+  transition: all;
+  width: 7%;
+  height: 30%;
+  top: 37%;
+  left: 12%;
+  position: absolute;
+  visibility: hidden;
+  transition-duration: 1.5s;
+  
+ }
+ #sol1{
+  transition: all;
+  width: 7%;
+  height: 30%;
+  top: 37%;
+  left: 12%;
+  position: absolute;
+  visibility: hidden;/****************hidden*/
+  transition-duration: 1.5s;
+  
+ }
+ #sol2{
+  transition: all;
+  width: 7%;
+  height: 30%;
+  top: 37%;
+  left: 12%;
+  position: absolute;/****************hidden*/
+  visibility: hidden;
   transition-duration: 1.5s;
   
  }
@@ -156,7 +195,7 @@
  left: 12.8%;
  position: absolute;
  transition-duration: 1.5s;
- visibility: visible;
+ visibility:hidden;
  
 }
  #flask22{
@@ -166,7 +205,7 @@
   top: 37%;
   left: 20%;
   position: absolute;
-  visibility: visible;
+  visibility: hidden;
 
  }
  #conicaflask1{
@@ -176,7 +215,7 @@
   top: 46%;
   left: 51%;
   position: absolute;
-  visibility: visible;
+  visibility: hidden;
 
  }
  #conicaflask2{
@@ -186,7 +225,7 @@
   top: 46%;
   left: 58%;
   position: absolute;
-  visibility: visible;
+  visibility: hidden;
 
  }
  #conicaflask3{
@@ -196,7 +235,7 @@
   top: 46%;
   left:  65%;
   position: absolute;
-  visibility: visible;
+  visibility: hidden;
 
 
  }
@@ -207,7 +246,7 @@
   top: 40.5%;
   left: 74.4%;
   position: absolute;
-  visibility: visible;
+  visibility: hidden;
  }
  #activaterbottel{
   transition: all;
@@ -216,16 +255,16 @@
   top: 50%;
   left:  74%;
   position: absolute;
-  visibility: visible;
+  visibility: hidden;
  }
- #acetic-beaker{
+ #aceticccbeaker{
   transition: all;
   width: 7%;
   height: 18%;
   top: 46%;
   left:  29%;
   position: absolute;
-  visibility: visible;
+  visibility: hidden;
  }
  #masurwater{
   transition: all;
@@ -233,7 +272,7 @@
   height: 13%;
   top: 51.8%;
   left:  41%;
-  transition-duration: 1.5s;
+  transition-duration: 1.5s; /*hidden*/
   position: absolute;
   visibility: hidden;
  }
@@ -245,13 +284,13 @@
   left:  40%;
   transition-duration: 1.5s;
   position: absolute;
-  visibility: visible;
+  visibility: hidden;
  }
  #mkippi{
   transition: all;
   width: 4.5%;
   height: 15%;
-  top: 35%;
+  top: 35%;             /*hidden*/
   left:  40%;
   position: absolute;
   visibility: hidden;
@@ -259,7 +298,7 @@
  #fkippi1{
   transition: all;
   width: 4.5%;
-  height: 15%;
+  height: 15%; /*hidden*/
   top: 38%;
   left:  52%;
   position: absolute;
@@ -272,7 +311,7 @@
   top: 38%;
   left:  59%;
   position: absolute;
-  visibility: hidden;
+  visibility: hidden; /*hidden*/
  }
  #fkippi3{
   transition: all;
@@ -280,7 +319,7 @@
   height: 15%;
   top: 38%;
   left:  66%;
-  position: absolute;
+  position: absolute; /*hidden*/
   visibility: hidden;
  }
  #mdrop{
@@ -289,7 +328,7 @@
   height: 4%;
   top: 33%;
   left:  41%;
-  position: absolute;
+  position: absolute; /*hidden*/
   visibility: hidden;
  }
  #f1drop{
@@ -299,14 +338,14 @@
   top: 36%;
   left:  53%;
   position: absolute;
-  visibility: hidden;
+  visibility: hidden; /*hidden*/
  }
  #f2drop{
   transition: all;
   width: 1.5%;
   height: 4%;
   top: 36%;
-  left:  60%;
+  left:  60%; /*hidden*/
   position: absolute;
   visibility: hidden;
  }
@@ -317,7 +356,7 @@
   top: 36%;
   left:  67%;
   position: absolute;
-  visibility: hidden;
+  visibility: hidden; /*hidden*/
  }
  #f1sol{
   transition: all;
@@ -325,7 +364,7 @@
   height: 5%;
   top: 61%;
   left: 51%;
-  position: absolute;
+  position: absolute; /*hidden*/
   visibility: hidden;
  }
  #f2sol{
@@ -334,14 +373,14 @@
   height: 5%;
   top: 61%;
   left: 58%;
-  position: absolute;
+  position: absolute; /*hidden*/
   visibility: hidden;
  }
  #f3sol{
   transition: all;
   width: 6%;
   height: 5%;
-  top: 61%;
+  top: 61%;             /*hidden*/
   left: 65%;
   position: absolute;
   visibility: hidden;
@@ -413,7 +452,7 @@
   
 
  }
- #roundflask1{
+ #roundflask11{
   transition: all;
   width: 6%;
   height: 28%;
@@ -433,7 +472,7 @@
   color: red;
 
  }
- #roundflask2{
+ #roundflask22{
   transition: all;
   width: 6%;
   height: 28%;
@@ -475,20 +514,20 @@
  }
  #buretimage{
   transition: all;
-  width: 9%;
-  height: 33%;
-  top: 27%;
-  left: 58%;
+  width:15%;
+  height:38%;
+  top: 24%;
+  left: 55%;
   position: absolute;
   visibility: visible;
 
  }
  #hburetimage{
   transition: all;
-  width: 9%;
-  height: 33%;
-  top: 27%;
-  left: 58%;
+  width:15%;
+  height:38%;
+  top: 24%;
+  left: 55%;
   position: absolute;
   visibility: visible;
 
@@ -672,44 +711,142 @@
   top: 0%;*/
   visibility: visible;
 }
+#ss1{
+  width: 3%;
+  height: 5%;
+  left: 52%;
+  top: 67%;
+  position:absolute;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+ 
+  visibility: hidden;
+}
+#ss2{
+  width: 3%;
+  height: 5%;
+  left: 60%;
+  top: 67%;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+  
+  position:absolute;
+  visibility: hidden;
+}
+#ss3{
 
-/********************step2******************************************************************/
-#vflask1{
+
+width: 3%;
+  height: 5%;
+  left: 67%;
+  top: 67%;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+  
+  position:absolute;
+  visibility: hidden;
+}
+#o{
+
+
+  width: 11%;
+    height: 4%;
+    left: 11%;
+    top: 67%;
+    font-size: 2vw;
+    color: rgb(7, 7, 7);
+    background-color: rgb(226, 223, 6);
+    
+    position:absolute;
+    visibility: hidden;
+  }
+  
+/****************************************************************step2******activater3************************************************************/
+#s1{
+  width: 3%;
+  height: 5%;
+  left: 21%;
+  top: 70%;
+  position:absolute;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+ 
+  visibility: hidden;
+}
+#s2{
+  width: 3%;
+  height: 5%;
+  left: 30%;
+  top: 70%;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+  
+  position:absolute;
+  visibility: hidden;
+}
+#s3{
+
+
+width: 3%;
+  height: 5%;
+  left: 40%;
+  top: 70%;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+  
+  position:absolute;
+  visibility: hidden;
+}
+
+
+
+
+
+#vflk1{
 
   width: 7%;
   height: 20%;
   left: 19%;
   top: 49%;
   position:absolute;
+  visibility: hidden;
   transition:all;
-  transition-duration: 2s;
+
  
 }
 
 
-#vflask2{
+#vflk2{
 
   width: 7%;
   height: 20%;
   left: 29%;
   top: 49%;
   position:absolute;
+  visibility: hidden;
   transition:all;
-  transition-duration: 2s;
+
  
 }
 
 
-#vflask3{
+#vflk3{
 
   width: 7%;
   height: 20%;
   left: 38%;
+  visibility: hidden;
   top: 49%;
   position: absolute;
 }
 
-#act1{
+#act12{
 
   width: 3%;
   height: 13%;
@@ -717,93 +854,101 @@
   top: 58%;
   position: absolute;
   transition:all;
+  visibility: hidden;
   transition-duration: 2s;
 }
-#actdroper{
 
+#activaterdroper{
+
+width: 3%;
+height: 13%;
+left: 60%;
+top: 52%;
+position: absolute;
+transition:all;
+transition-duration: 2s;
+visibility: hidden;
+}
+
+
+#drop0{
+  width: 2%;
+  height: 4%;
+  left: 21.1%;
+  top: 40%;
+  position: absolute;                                /***hidden**/
+  transition:all;
+  scale:0.9 ;
+  visibility: hidden;
+  transition-duration: 1.5s;
+} 
+#drop1{
+  width: 2%;
+  height:4%;
+  left: 31.1%;
+  top: 40%;
+  position: absolute;
+  transition:all;
+  scale:0.9 ;                               /***hidden**/
+  visibility: hidden;
+  transition-duration: 1.5s;
+}
+#drop2{
+  width: 2%;
+  height: 4%;
+  left: 41.1%;
+  top: 40%;
+  position: absolute;                    /***hidden**/
+  transition:all;
+  scale:0.9 ;
+  visibility: hidden;
+  transition-duration: 1.5s;
+} 
+
+
+
+
+
+/******************************************step3******* taitration3*****************************/
+#h1{
   width: 3%;
-  height: 13%;
-  left: 60%;
-  top: 52%;
-  position: absolute;
-  transition:all;
-  transition-duration: 2s;
-}
-
-#actdrp{
-  width: 2%;
-  height: 4%;
-  left: 21.5%;
-  top: 45%;
-  position: absolute;
-  transition:all;
-  scale:0.9 ;
-  visibility: hidden;
-} 
-#actdrp1{
-  width: 2%;
-  height: 4%;
-  left: 21.5%;
-  top: 59%;
-  position: absolute;
-  transition:all;
-  scale:0.9 ;
-  visibility:hidden;
-}
-#actdrp2{
-  width: 2%;
-  height: 4%;
-  left: 31.5%;
-  top: 45%;
-  position: absolute;
-  transition:all;
-  scale:0.9 ;
-  visibility: hidden;
-} 
-#actdrp3{
-  width: 2%;
-  height: 4%;
-  left: 31.5%;
-  top: 59%;
-  position: absolute;
-  transition:all;
-  scale:0.9 ;
-  visibility:hidden;
-}
-#actdrp4{
-  width: 2%;
-  height: 4%;
-  left: 40.5%;
-  top: 45%;
-  position: absolute;
-  transition:all;
-  scale:0.9 ;
-  visibility:hidden;
-} 
-#actdrp5{
-  width: 2%;
-  height: 4%;
-  left: 40.5%;
-  top: 59%;
-  position: absolute;
-  transition:all;
-  scale:0.9 ;
-  visibility:hidden;
-}
-
-
-
-
-
-
-/******************************************step3************************************/
- #bgimg{
-  height: 100%;
-  width: 100%;
-  position: absolute;
+  height: 5%;
+  left: 29%;
+  top: 73%;
+  position:absolute;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
  
-  background-size: cover;
+  visibility: hidden;
 }
+#h2{
+  width: 3%;
+  height: 5%;
+  left: 39%;
+  top: 73%;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+  
+  position:absolute;
+  visibility: hidden;
+}
+#h3{
+
+
+width: 3%;
+  height: 5%;
+  left: 49%;
+  top: 73%;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+  
+  position:absolute;
+  visibility: hidden;
+}
+
 
 
 #brstand{
@@ -811,8 +956,8 @@
   height: 51vh;
   width: 12vw;
   left: 57%;
-  top: 20%;  
-  visibility: visible;
+  top: 18%;  
+  visibility: hidden;
 }
 
 #orgflsk{
@@ -822,9 +967,9 @@
   position: absolute;
   height: 14vh;
   width: 5vw;
-  left: 28%;
+  left: 27.5%;
   top: 56%;
-  visibility: visible;
+  visibility: hidden;
   animation:  2s ease-in-out infinite;
 }
 
@@ -836,21 +981,21 @@
   position: absolute;
   height: 14vh;
   width: 5vw;
-  left: 38%;
+  left: 37.5%;
   top: 56%;  
-  visibility: visible;
+  visibility: hidden;
 
 }
-#flask3{
+#flaskk3{
   cursor: pointer;
   transition: all;
   transition-duration: 1s;
   position: absolute;
   height: 14vh;
   width: 5vw;
-  left: 48%;
+  left: 47.5%;
   top: 56%;  
-  visibility: visible;
+  visibility:hidden;
 }
 
 #knob{
@@ -860,11 +1005,9 @@
   right: 34%;
   top: 47%;
   cursor: pointer;
-  transition: all;
-  transition-duration: 1S;
-  visibility: visible;
+  visibility:hidden ;
 }
-#drop{
+#dropp{
   height: 2vh;
   width: 1vw;
   position: absolute;
@@ -872,9 +1015,9 @@
   top: 54%;
   transition: all;
   transition-duration: 1S;
-  visibility: hidden;
+  visibility: hidden;     /***************hidden**/
 }
-#pink1{
+#pinkk1{
   cursor: pointer;
   transition: all;
   transition-duration: 1s;
@@ -884,10 +1027,11 @@
   left: 62%;
   top: 56%;
   opacity: 0%;
+  visibility: hidden;
   animation:  2s ease-in-out infinite;
 }
 
-#pink2{
+#pinkk2{
   cursor: pointer;
   transition: all;
   transition-duration: 1s;
@@ -896,24 +1040,130 @@
   width: 5vw;
   left: 62%;
   top: 56%;
+  visibility: hidden;
   opacity: 0%;
   animation:  2s ease-in-out infinite;
 } 
-#pink3{
+#pinkk3{
   cursor: pointer;
   transition: all;
   transition-duration: 1s;
   position: absolute;
   height: 14vh;
   width: 5vw;
-  left: 62%;
+  left: 61.8%;
   top: 56%;
   opacity: 0%;
+  visibility: hidden;
   animation:  2s ease-in-out infinite;
  }
+/*table*/
+#table{
+position:absolute;
+height: 27%;
+  width: 28%;
+  left: 70%;
+  top: 10%;
+  background-color: rgb(167, 241, 235);
+  color: black;
+  visibility: hidden;
+}
+.thd {
+border: 1px solid black;
+border-collapse:separate;
+align-items: center;
+background-color: #D6EEEE;
 
- /****************************step4**************************/
- #vflask1{
+background-color: rgb(181, 209, 224);
+
+}
+#tableh1{
+color:rgb(140, 204, 201);
+font-size: large;
+position:absolute;
+left: 70%;
+top: 1%;
+visibility: hidden;
+
+}
+.center {
+margin-left: auto;
+margin-right: auto;
+width: 40%;
+
+
+}
+td {
+text-align: center;
+
+}
+
+/***********************************activetor 5**************************************/
+#u1{
+  width: 3%;
+  height: 5%;
+  left: 21%;
+  top: 70%;
+  position:absolute;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+ 
+  visibility: hidden;
+}
+#u2{
+  width: 3%;
+  height: 5%;
+  left: 31%;
+  top: 70%;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+  
+  position:absolute;
+  visibility: hidden;
+}
+#u3{
+
+
+width: 3%;
+  height: 5%;
+  left: 40%;
+  top: 70%;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+  
+  position:absolute;
+  visibility: hidden;
+}
+#u4{
+  width: 3%;
+  height: 5%;
+  left: 50%;
+  top: 70%;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+  
+  position:absolute;
+  visibility: hidden;
+}
+#u5{
+
+
+width: 3%;
+  height: 5%;
+  left: 60%;
+  top: 70%;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+  
+  position:absolute;
+  visibility: hidden;
+}
+#volflask1{
 
   width: 7%;
   height: 20%;
@@ -921,12 +1171,13 @@
   top: 49%;
   position:absolute;
   transition:all;
+  visibility: hidden;
   transition-duration: 2s;
  
 }
 
 
-#vflask2{
+#volflask2{
 
   width: 7%;
   height: 20%;
@@ -934,34 +1185,48 @@
   top: 49%;
   position:absolute;
   transition:all;
+  visibility: hidden;
   transition-duration: 2s;
  
 }
 
 
-#vflask3{
+#volflask3{
 
   width: 7%;
   height: 20%;
   left: 38%;
+  visibility: hidden;
   top: 49%;
   position: absolute;
 }
-#vflask4{
-width: 7%;
-height: 20%;
-left: 48%;
-top: 49%;
-position: absolute;
+
+
+#volflask4{
+
+  width: 7%;
+  height: 20%;
+  left: 47%;
+  top: 49%;
+  position:absolute;
+  visibility: hidden;
+  transition:all;
+
+ 
 }
-#vflask5{
-width: 7%;
-height: 20%;
-left: 58%;
-top: 49%;
-position: absolute;
+
+
+#volflask5{
+
+  width: 7%;
+  height: 20%;
+  left: 57%;
+  top: 49%;
+  visibility: hidden;
+  position: absolute;
 }
-#act{
+
+#activater{
 
   width: 3%;
   height: 13%;
@@ -969,243 +1234,1789 @@ position: absolute;
   top: 58%;
   position: absolute;
   transition:all;
-  transition-duration: 2s;
-}
-#droper{
-
-  width: 3%;
-  height: 13%;
-  left: 70%;
-  top: 52%;
-  position: absolute;
-  transition:all;
+  visibility: hidden;
   transition-duration: 2s;
 }
 
-#actd{
+#activaterdroper55f{
+
+width: 3%;
+height: 13%;
+left: 70%;
+top: 52%;
+position: absolute;
+transition:all;
+visibility: hidden;
+transition-duration: 1.5s;
+
+}
+
+
+#droper0{
   width: 2%;
   height: 4%;
-  left: 21%;
-  top: 54%;
+  left: 21.1%;
+  top: 40%;
   position: absolute;
   transition:all;
   scale:0.9 ;
-  visibility: hidden;
+  visibility: hidden;/**************hidden**/
+  transition-duration: 1.5s;
 } 
-#actd1{
+#droper1{
+  width: 2%;
+  height:4%;
+  left: 31.1%;
+  top: 40%;
+  position: absolute;
+  transition:all;
+  scale:0.9 ;
+  visibility: hidden;/**************hidden**/
+  transition-duration: 1.5s;
+}
+#droper2{
   width: 2%;
   height: 4%;
+  left: 41.1%;
+  top: 40%;
+  position: absolute;
+  transition:all;
+  scale:0.9 ;/**************hidden**/
+  visibility: hidden;
+  transition-duration: 1.5s;
+} 
+#droper3{
+  width: 2%;
+  height:4%;
+  left: 50.1%;
+  top: 40%;
+  position: absolute;
+  transition:all;/**************hidden**/
+  scale:0.9 ;
+  visibility: hidden;
+  transition-duration: 1.5s;
+}
+#droper4{
+  width: 2%;
+  height: 4%;
+  left: 58.1%;
+  top: 40%;
+  position: absolute;
+  transition:all;/**************hidden**/
+  scale:0.9 ;
+  visibility: hidden;
+  transition-duration: 1.5s;
+  
+} 
+/************************************taitration5**************************************/
+#uu1{
+  width: 3%;
+  height: 5%;
   left: 21%;
-  top: 54%;
-  position: absolute;
-  transition:all;
-  scale:0.9 ;
+  top: 70%;
+  position:absolute;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+ 
+  visibility: hidden;
+}
+#uu2{
+  width: 3%;
+  height: 5%;
+  left: 28%;
+  top: 70%;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+  
+  position:absolute;
+  visibility: hidden;
+}
+#uu3{
+
+
+width: 3%;
+  height: 5%;
+  left: 35%;
+  top: 70%;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+  
+  position:absolute;
+  visibility: hidden;
+}
+#uu4{
+  width: 3%;
+  height: 5%;
+  left: 42%;
+  top: 70%;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+  
+  position:absolute;
+  visibility: hidden;
+}
+#uu5{
+
+
+width: 3%;
+  height: 5%;
+  left: 50%;
+  top: 70%;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+  
+  position:absolute;
   visibility: hidden;
 }
 
-#actd1{
-  width: 2%;
-  height: 4%;
-  left: 31%;
-  top: 54%;
-  position: absolute;
-  transition:all;
-  scale:0.9 ;
-  visibility: hidden;
-}
 
-#actd2{
-  width: 2%;
-  height: 4%;
-  left: 40%;
-  top: 54%;
-  position: absolute;
-  transition:all;
-  scale:0.9 ;
-  visibility: hidden;
-}
-
-#actd3{
-width: 2%;
-height: 4%;
-left: 50%;
-top: 54%;
-position: absolute;
-transition:all;
-scale:0.9 ;
-visibility: hidden;
-}
-
-#actd4{
-width: 2%;
-height: 4%;
-left: 60%;
-top: 54%;
-position: absolute;
-transition:all;
-scale:0.9 ;
-visibility: hidden;
-}
-
-
-
-/***************************************step5**************************************/
-
-
-
-
-#brstand1{
+#brstand5f{
   position: absolute;
   height: 55vh;
   width: 16vw;
   left: 57%;
-  top: 15%;  
-  visibility: visible;
+  top: 12%;  
+  visibility: hidden;
 }
 
-#orgflsk1{
+#f1{
   cursor: pointer;
   transition: all;
   transition-duration: 1s;
   position: absolute;
   height: 14vh;
-  width: 4vw;
-  left: 20%;
+  width: 4.9vw;
+  left: 20.5%;
   top: 56%;
-  visibility: visible;
+  visibility: hidden;
   animation:  2s ease-in-out infinite;
 }
 
 
-#flask21{
+#f2{
   cursor: pointer;
   transition: all;
   transition-duration: 1s;
   position: absolute;
   height: 14vh;
-  width: 4vw;
+  width: 4.9vw;
   left: 27%;
   top: 56%;  
-  visibility: visible;
+  visibility: hidden;
 
 }
-#flask31{
+#f3{
   cursor: pointer;
   transition: all;
   transition-duration: 1s;
   position: absolute;
   height: 14vh;
-  width: 4vw;
+  width: 5vw;
   left: 34%;
   top: 56%;  
-  visibility: visible;
+  visibility: hidden;
 
 }
-#flask41{
+#f4{
   cursor: pointer;
   transition: all;
   transition-duration: 1s;
   position: absolute;
   height: 14vh;
-  width: 4vw;
+  width: 5vw;
   left: 41%;
   top: 56%;  
-  visibility: visible;
+  visibility: hidden;
 
 }
-#flask51{
+#f5v{
   cursor: pointer;
   transition: all;
   transition-duration: 1s;
   position: absolute;
   height: 14vh;
-  width: 4vw;
+  width: 5vw;
   left: 48%;
   top: 56%;  
-  visibility: visible;
+  visibility: hidden;
 
 }
 
-#knob1{
+#knob5f{
   height: 2vh;
   width: 2vw;
   position: absolute;
   right: 31%;
-  top: 45%;
+  top: 43%;
   cursor: pointer;
-  transition: all;
-  transition-duration: 1S;
-  visibility: visible;
+
+  visibility: hidden;
 }
-#drop111{
+#droptaitration{
   height: 2vh;
   width: 1vw;
   position: absolute;
-  right: 33%;
-  top: 54%;
+  right: 32.6%;
+  top: 52.5%;
   transition: all;
   transition-duration: 1S;
   visibility: hidden;
 }
-#pink11{
+#p1{
   cursor: pointer;
   transition: all;
   transition-duration: 1s;
   position: absolute;
   height: 14vh;
-  width: 4vw;
-  left: 64.5%;
+  width: 5vw;
+  left: 64.2%;
   top: 56%;
+  visibility: hidden;
   opacity: 0%;
   animation:  2s ease-in-out infinite;
 }
 
-#pink21{
+#p2{
   cursor: pointer;
   transition: all;
   transition-duration: 1s;
   position: absolute;
   height: 14vh;
-  width: 4vw;
-  left: 64.5%;
+  width: 5vw;
+  left: 64.1%;
   top: 56%;
   opacity: 0%;
+  visibility: hidden;
   animation:  2s ease-in-out infinite;
 } 
-#pink31{
+#p3{
   cursor: pointer;
   transition: all;
   transition-duration: 1s;
   position: absolute;
   height: 14vh;
-  width: 4vw;
-  left: 64.5%;
+  width: 5vw;
+  left: 64.1%;
+  top: 56%;
+  opacity:0%;
+  visibility: hidden;
+  animation:  1s ease-in-out infinite;
+}
+#p4{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14vh;
+  width: 5vw;
+  left: 64.1%;
   top: 56%;
   opacity: 0%;
+  visibility: hidden;
   animation:  2s ease-in-out infinite;
 }
-#pink41{
+#p5{
   cursor: pointer;
   transition: all;
   transition-duration: 1s;
   position: absolute;
   height: 14vh;
-  width: 4vw;
-  left: 64.5%;
+  width: 5vw;
+  left: 64.1%;
   top: 56%;
   opacity: 0%;
+  visibility: hidden;
   animation:  2s ease-in-out infinite;
 }
-#pink51{
+#arrowblue2{
+  height: 7vh;
+  width: 4vw;
+  position: absolute;
+  right: 26%;
+  top: 44%;
+  rotate: -90deg;
+  visibility: hidden;/******hidden***********/
+}
+#arrowblue1{
+  height: 7vh;
+  width: 4vw;
+  position: absolute;
+  right: 77%;
+  top: 75%;
+  rotate: -1deg;/******hidden***********/
+  visibility:hidden;
+}
+/*table*/
+
+ #table2{
+  position:absolute;
+  height: 27%;
+    width: 25%;
+    left: 0.5%;
+    top: 11%;
+    visibility: hidden;
+    background-color: rgb(0, 0, 0);
+    color: rgb(12, 15, 15);
+}  
+ table, th,td {
+  border: 1px solid black;
+  border-collapse:separate;
+  align-items: center;
+  
+  
+  background-color: rgb(130, 199, 199);
+  
+}
+#headtb2{
+  color:rgb(128, 9, 82);
+  font-size: x-large;
+  position:absolute;
+  left: 0.5%;
+  visibility: hidden;
+  top: 2%;
+}
+.center2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  
+}
+td {
+  text-align: center;
+} 
+/*******************************step5 weing chechole******************************************/
+#wk1{
+  width: 3%;
+  height: 5%;
+  left: 45%;
+  top: 65%;
+  position:absolute;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+ 
+  visibility: hidden;
+}
+#wk2{
+  width: 3%;
+  height: 5%;
+  left: 53%;
+  top: 65%;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+  
+  position:absolute;
+  visibility: hidden;
+}
+#wk3{
+
+
+width: 3%;
+  height: 5%;
+  left: 61%;
+  top: 65%;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+  
+  position:absolute;
+  visibility: hidden;
+}
+#wk4{
+  width: 3%;
+  height: 5%;
+  left: 69%;
+  top: 65%;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+  
+  position:absolute;
+  visibility: hidden;
+}
+#wk5{
+
+
+width: 3%;
+  height: 5%;
+  left: 78%;
+  top: 65%;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+  
+  position:absolute;
+  visibility: hidden;
+}
+
+
+#weingmachine{
+  width: 16%;
+  height: 9%;
+  top: 61%;
+  left: 12%;
+  position:absolute;
+  visibility:hidden;
+}
+#bowl1{
+  position: absolute;
+  width: 6%;
+  height:3.6%;
+  top: 67% ;
+  left: 32%;
+  transition-duration: 1.5s;
+  visibility:hidden;
+
+  
+
+}
+
+#bowl2{
+ 
+position: absolute;
+width: 6%;
+height:3.6%;
+top: 67% ;
+left: 40%;
+
+visibility:hidden;
+  
+
+
+  
+
+}
+
+#spoonempty{
+
+  position: absolute;
+  width: 6%;
+  height:12%;
+  top:63% ;          
+  left:52%;
+ 
+  transition-duration: 1.5s;
+  visibility:hidden;
+
+}
+#charcole1{
+ 
+  position: absolute;
+  width: 5.5%; /* not visisble*/
+  height:5.5%;                
+  top:63.3% ;
+  left:40.2%;
+  visibility:hidden;
+
+}
+#charcole2{
+
+  position: absolute;
+  width: 5.5%; /* not visisble*/
+  height:5.5%;                
+  top:63.3% ;
+  left:40.2%;
+  visibility:hidden;
+}
+#charcole3{
+
+  position: absolute;
+  width: 5.5%;
+  height:5.5%;                
+  top:63.3% ;
+  left:40.2%;
+  visibility:hidden;      
+
+ 
+}
+#fillcharcole{
+
+  position: absolute;
+  width: 2%;
+  height:2%;
+  top:63.5%;               /* not visisble chnage in*/
+  left:42%;
+  opacity: 100%;
+  visibility: hidden;
+  transition-duration: 1.5s;
+ 
+}
+#fillcharcole2{
+
+position: absolute;
+width: 2%;
+height:2%;
+top:64.5%;               /* not visisble chnage in*/
+left:42%;
+opacity: 100%;
+visibility: hidden;
+transition-duration: 1.5s;
+}
+
+#beakercharcole1{
+position: absolute;
+width: 7%;
+height: 20%;
+top:44% ;
+left:43%;
+opacity: 0%;
+visibility: hidden;
+}
+#beakercharcole2{
+position: absolute;
+width: 7%;
+height: 20%;
+top:44% ;
+left:51%;
+opacity: 0%;
+visibility:hidden;
+}
+#beakercharcole3{
+position: absolute;
+width: 7%;
+height: 20%;
+top:44% ;
+left:59%;
+opacity: 0%;
+visibility:hidden;
+}
+#beakercharcole4{
+position: absolute;
+width: 7%;
+height: 20%;
+top:44% ;
+left:67%;
+opacity: 0%;
+visibility:hidden;
+}
+#beakercharcole5{
+position: absolute;
+width: 7%;
+height: 20%;
+top:44% ;
+left:75%;
+opacity: 0%;
+visibility:hidden;
+}
+#beaker1{
+ 
+  position: absolute;
+  width: 7%;
+  height: 20%;
+  top:44% ;
+  left:43%;
+  visibility:hidden;
+}
+#beaker2{
+ 
+   
+position: absolute;
+width: 7%;
+height: 20%;
+top:44% ;
+left:51%;
+visibility:hidden;
+}
+#beaker3{
+ 
+  
+position: absolute;
+width: 7%;
+height: 20%;
+top:44% ;
+left:59%;
+visibility:hidden;
+}
+#beaker4{
+ 
+ 
+position: absolute;
+width: 7%;
+height: 20%;
+top:44% ;
+left:67%;
+visibility:hidden;
+}
+#beaker5{
+ 
+position: absolute;
+width: 7%;
+height: 20%;
+top:44% ;
+left:75%;
+visibility:hidden;
+}
+
+
+
+
+#number{
+
+  position: absolute;
+  color: red;
+  top: 65%;
+  left: 18%;                 /* not visisble*/
+  visibility: hidden;
+  transition-delay: 0.5;
+  font-size: 2.5vh;
+ 
+ 
+ 
+  
+}
+#on{
+  position: absolute;
+  background-color: black;
+  font-size: 1.5vh;
+  color: yellow;
+  border: 1px solid black ;
+  width: 2%;
+  height: 3%;
+  border-radius: 20%;
+  top: 65%;
+  left: 14%;
+  visibility:hidden;
+ 
+ 
+  
+
+}
+#tare{
+  position: absolute;
+  background-color: black;
+  color: yellow;
+  font-size: 2vh;
+  border: 1px solid black ;
+  width: 3%;
+  height: 3%;
+  visibility:hidden;
+  border-radius: 30%;
+  top: 65%;
+  left: 24%;
+  
+
+}
+/***********************************step6 megntic machine*************************************/
+#kk1{
+  width: 3%;
+  height: 5%;
+  left: 46%;
+  top: 65%;
+  position:absolute;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+ 
+  visibility: hidden;
+}
+#kk2{
+  width: 3%;
+  height: 5%;
+  left: 53%;
+  top: 65%;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+  
+  position:absolute;
+  visibility: hidden;
+}
+#kk3{
+
+
+width: 3%;
+  height: 5%;
+  left: 59%;
+  top: 65%;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+  
+  position:absolute;
+  visibility: hidden;
+}
+#kk4{
+  width: 3%;
+  height: 5%;
+  left: 66%;
+  top: 65%;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+  
+  position:absolute;
+  visibility: hidden;
+}
+#kk5{
+
+
+width: 3%;
+  height: 5%;
+  left: 72%;
+  top: 65%;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+  
+  position:absolute;
+  visibility: hidden;
+}
+
+
+#red{
+  position: absolute;
+  height: 4vh;
+  width: 6vh;
+  left: 45%;
+  top: 70%;
+  
+  visibility: hidden; /**********already hidden**************/
+}
+#blue{
+  position: absolute;
+  height: 4vh;
+  width: 6vh;
+  left: 45%;
+  top: 70%;
+  
+  visibility: hidden; /**********already hidden**************/
+}
+ #contain{
+
+  height: 1.9%;
+  width: 6.5%;
+  left: 28.7%;
+  top: 69.1%;
+  position: absolute;
+  visibility: hidden;
+  background-color:rgb(44, 41, 41);
+  
+} 
+
+#stirror{
+  position: absolute;
+  height: 18%;
+  width: 31%;
+  left: 14%;
+  top: 50%;  
+  rotate: 0.2deg;
+  visibility: hidden;
+}
+#hand{
+  
+  position: absolute;
+  height: 8%;
+  width: 6%;
+  transition: all;
+  transition-duration: 1s;
+  animation: blinking 2s;                               /**********already hidden**************/
+  animation-iteration-count: infinite;
+  visibility: hidden;
+  rotate:180deg;
+
+}
+#nobspeed{
+  position: absolute;
+  height: 4%;
+  width: 0.4%;
+  left: 21.1%;
+  top: 56.9%;
+  cursor: pointer;
+  visibility: hidden;
+}
+#nobheat{
+  position: absolute;
+  height: 4%;
+  width: 0.4%;
+  left: 36.8%;
+  top: 56.5%;
+ cursor: pointer;
+  visibility:hidden;
+}
+#powerbutton{
+  position: absolute;
+  height: 9%;
+  width: 8%;
+  left: 23%;
+  top: 35%;
+  visibility: hidden;
+    
+  
+}
+#powerbuttonoff{
+  position: absolute;
+  height: 4vh;
+  width: 1.6vw;
+  left: 28.3%;
+  top: 36.4%;
+  visibility: hidden;
+  cursor: pointer;
+}
+#powerbuttonon{
+  position: absolute;
+  height: 4%;
+  width: 1.6%;
+  left: 28.3%;
+  top: 36.4%;
+  visibility: hidden;/**********already hidden**************/
+}
+#machbuttonoff{
+  position: absolute;
+  height: 4%;
+  width: 1.4%;
+  left: 29.4%;
+  top: 57%;
+  visibility: hidden;
+  cursor: pointer;
+  
+}
+#machbuttonon{
+  position: absolute;
+  height: 4%;
+  width: 1.4%;
+  left: 29.4%;
+  top: 57%;
+  visibility: hidden;/**********already hidden**************/
+}
+#redlight{
+  position: absolute;
+  height: 2%;
+  width: 1%;
+  left: 14.6%;
+  top: 62%;
+  visibility: hidden;/**********already hidden**************/
+}
+
+#powerwire{
+  position: absolute;
+  height: 6%;
+  width: 0.2%;
+  left: 24.8%;
+  top: 44%;
+  visibility: hidden;
+}
+#arrow{
+  position: absolute;
+  height: 5vh;
+  width: 3vw;
+  left: 23%;
+  top: 74%;  
+  
+  visibility: hidden;/**********already hidden**************/
+}
+#arrow0{
+  position: absolute;
+  height: 6vh;
+  width: 3vw;
+  left: 50%;
+  top: 70%;  
+  rotate: -90deg;
+  visibility: hidden;/**********already hidden**************/
+}
+#arrow1{
+  position: absolute;
+  height: 6vh;
+  width: 3vw;
+  left: 75%;
+  top: 70%;  
+  rotate: -90deg;
+  visibility: hidden;/**********already hidden**************/
+}
+#black11{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14%;
+  width: 5%;
+  left: 45.4%;
+  top: 50%;
+  visibility: hidden;
+  animation:  3s ease-in-out infinite;
+}
+#black22{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14%;
+  width: 5%;
+  left: 51.5%;
+  top: 50%;;
+  visibility: hidden;
+  
+  animation:  3s ease-in-out infinite;
+}
+#black33{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14%;
+  width: 5%;
+  left: 58.2%;
+  top: 50%;
+  
+  visibility: hidden;
+  animation:  3s ease-in-out infinite;
+}
+#black44{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14%;
+  width: 5%;
+  left: 64.4%;
+  top: 50%;
+  visibility: hidden;
+  animation:  3s ease-in-out infinite;
+}
+#black55{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14%;
+  width: 5%;
+  left: 70.6%;
+  top: 50%;
+  visibility: hidden;
+  animation:  3s ease-in-out infinite;
+}
+#blackfi1{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 0s;
+  position: absolute;
+  height: 14%;
+  width: 5%;
+  left: 16%;
+  top: 38.3%;
+ 
+  visibility: hidden;/********************hidden****/
+  animation:  4s ease-in-out infinite;
+}
+ #blackfi2{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 0s;
+  position: absolute;
+  height: 14%;
+  width: 5%;
+  left: 21.8%;
+  top: 38.3%;
+
+  visibility: hidden;/********************hidden****/
+  animation:  4s ease-in-out infinite;
+}
+#blackfi3{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 0s;
+  position: absolute;
+  height: 14%;
+  width: 5%;
+  left: 39.4%;
+  top: 38.3%;
+  visibility: hidden;/********************hidden****/
+  
+  animation:  4s ease-in-out infinite;
+}
+#blackfi4{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 0s;
+  position: absolute;
+  height: 14%;
+  width: 5%;
+  left: 33.7%;
+  top: 38.3%;
+  
+  visibility: hidden;/********************hidden****/
+  animation:  4s ease-in-out infinite;
+}
+#blackfi5{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 0s;
+  position: absolute;
+  height: 14%;
+  width: 5%;
+  left: 28%;
+  top: 38.3%;
+
+  visibility: hidden;
+  animation:  4s ease-in-out infinite;
+} 
+#megnatic{
+  height: 1%;
+  width: 1.9%;
+  left: 70%;
+  top: 73%;
+  position: absolute;
+  visibility:hidden;
+  cursor: pointer;
+
+}
+#meg1{
+  height: 1%;
+  width: 1.9%;
+  left: 17.7%;
+  top: 30%;
+  position: absolute;
+ 
+  visibility: hidden;/**********already hidden**************/
+  transition-duration: 1s;
+  animation:  4s ease-in-out infinite;
+}
+#meg2{
+  height: 1%;
+  width: 1.9%;
+  left: 23.1%;
+  top: 30%;
+position: absolute;
+visibility: hidden;/**********already hidden**************/
+transition-duration: 1s;
+animation:  4s ease-in-out infinite;
+}
+#meg3{
+  height: 1%;
+  width: 1.9%;
+  left: 30%;
+  top: 30%;
+position: absolute;/**********already hidden**************/
+visibility: hidden;
+transition-duration: 1s;
+animation:  4s ease-in-out infinite;
+}
+#meg4{
+  height: 1%;
+  width: 1.9%;
+  left: 35%;
+  top: 30%;
+position: absolute;
+visibility: hidden;/**********already hidden**************/
+transition-duration: 1s;
+animation:  4s ease-in-out infinite;
+}
+#meg5{
+  height: 1%;
+  width: 1.9%;
+  left: 41%;
+  top: 30%;
+position: absolute;
+visibility: hidden;/**********already hidden**************/
+transition-duration: 1s;
+animation:  4s ease-in-out infinite;
+}
+/***********************filter***************************************************************************/
+#kkk1{
+  width: 3%;
+  height: 4%;
+  left: 46%;
+  top: 71%;
+  position:absolute;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+ 
+  visibility:hidden;
+}
+#kkk2{
+  width: 3%;
+  height: 4%;
+  left: 52%;
+  top: 71%;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+  
+  position:absolute;
+  visibility: hidden;
+}
+#kkk3{
+
+
+width: 3%;
+  height: 4%;
+  left: 58%;
+  top: 71%;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+  
+  position:absolute;
+  visibility: hidden;
+}
+#kkk4{
+  width: 3%;
+  height: 4%;
+  left: 64%;
+  top: 71%;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+  
+  position:absolute;
+  visibility: hidden;
+}
+#kkk5{
+
+
+width: 3%;
+  height: 4%;
+  left: 70%;
+  top: 71%;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+  
+  position:absolute;
+  visibility:hidden;
+}
+
+#filterstand11{
+  position: absolute;
+  height: 51vh;
+  width: 12vw;
+  left: 26%;
+  top: 18%;  
+  visibility: hidden;
+}
+#blanckflask11{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1.5s;
+  position: absolute;
+  height: 14vh;
+  width: 5vw;
+  left: 34.8%;
+  top: 25.8%;
+  rotate: -80deg;
+  visibility: hidden;/**********already hidden*****************/
+  animation:  3s ease-in-out infinite;
+}
+#bflask11{
   cursor: pointer;
   transition: all;
   transition-duration: 1s;
   position: absolute;
   height: 14vh;
-  width: 4vw;
-  left: 64.5%;
+  width: 5vw;
+  left: 45%;
   top: 56%;
-  opacity: 0%;
+   opacity: 100%;
+   visibility: hidden;
+  animation:  3s ease-in-out infinite;
+}
+#bflask22{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14vh;
+  width: 5vw;
+  left: 51%;
+  top: 56%;
+  visibility: hidden;
+  animation:  3s ease-in-out infinite;
+}
+#bflask33{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14vh;
+  width: 5vw;
+  left: 57%;
+  top: 56%;
+  visibility: hidden;
+  
+  animation:  3s ease-in-out infinite;
+}
+#bflask44{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14vh;
+  width: 5vw;
+  left: 63%;
+  top: 56%;
+  visibility:hidden;
+  animation:  3s ease-in-out infinite;
+}
+#bflask55{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14vh;
+  width: 5vw;
+  left: 69%;
+  top: 56%;
+  visibility: hidden;
+  animation:  3s ease-in-out infinite;
+}
+#bdrop11{
+cursor: pointer;
+transition: all;
+transition-duration: 1.5s;
+position: absolute;
+height: 6vh;
+width: 3.1vw;
+left: 32.6%;
+top: 36.7%;
+visibility: hidden;/*************already hidden*******************/
+opacity: 50%;
+animation:  3s ease-in-out infinite;
+}
+#bldrpflask11{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1.5s;
+  position: absolute;
+  height: 6vh;
+  width: 1vw;
+  left: 33.4%;
+  top: 33%;
+  visibility: hidden;/*************already hidden*******************/
+  opacity: 50%;
+  animation:  3s ease-in-out infinite;
+  }
+#drop11{
+cursor: pointer;
+transition: all;
+transition-duration: 2s;
+position: absolute;
+height: 4vh;
+width: 1vw;
+left: 33.5%;
+top: 45%;
+visibility: hidden;/*************already hidden*******************/
+animation:  2s ease-in-out infinite;
+}
+
+
+#readyflask11{
+cursor: pointer;
+transition: all;
+transition-duration: 1.5s;
+position: absolute;
+height: 14vh;
+width: 5vw;
+left: 32%;
+top: 54%;
+visibility: hidden;
+animation:  2s ease-in-out infinite;
+}
+#aceticflask11{
+cursor: pointer;
+transition: all;
+transition-duration: 1.5s;
+position: absolute;
+height: 14vh;
+width: 5vw;
+left: 32%;
+top: 54%;
+visibility: hidden;/*************already hidden*******************/
+animation:  2s ease-in-out infinite;
+}
+#aceticflask22{
+cursor: pointer;
+transition: all;
+transition-duration: 1.5s;
+position: absolute;
+height: 14vh;
+width: 5vw;
+left: 32%;
+top: 54%;
+visibility: hidden;/*************already hidden*******************/
+animation:  2s ease-in-out infinite;
+}
+#aceticflask33{
+cursor: pointer;
+transition: all;
+transition-duration: 1.5s;
+position: absolute;
+height: 14vh;
+width: 5vw;
+left: 32%;
+top: 54%;
+visibility: hidden;/*************already hidden*******************/
+animation:  2s ease-in-out infinite;
+}
+#aceticflask44{
+cursor: pointer;
+transition: all;
+transition-duration: 1.5s;
+position: absolute;
+height: 14vh;
+width: 5vw;
+left: 32%;
+top: 54%;
+visibility: hidden;/*************already hidden*******************/
+animation:  2s ease-in-out infinite;
+}
+#aceticflask55{
+cursor: pointer;
+transition: all;
+transition-duration: 1.5s;
+position: absolute;
+height: 14vh;
+width: 5vw;
+left: 32%;
+top: 54%;
+visibility: hidden;/*************already hidden*******************/
+animation:  2s ease-in-out infinite;
+}
+
+/*********************************taitration last******************************/
+#brstandtai{
+  position: absolute;
+  height: 55vh;
+  width: 16vw;
+  left: 57%;
+  top: 12%;  
+  visibility: hidden;
+}
+#kkkk1{
+  width: 3%;
+  height: 5%;
+  left: 21%;
+  top: 70%;
+  position:absolute;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+ 
+  visibility: hidden;
+}
+#kkkk2{
+  width: 3%;
+  height: 5%;
+  left: 28%;
+  top: 70%;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+  
+  position:absolute;
+  visibility: hidden;
+}
+#kkkk3{
+
+
+width: 3%;
+  height: 5%;
+  left: 35%;
+  top: 70%;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+  
+  position:absolute;
+  visibility: hidden;
+}
+#kkkk4{
+  width: 3%;
+  height: 5%;
+  left: 42%;
+  top: 70%;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+  
+  position:absolute;
+  visibility: hidden;
+}
+#kkkk5{
+
+
+width: 3%;
+  height: 5%;
+  left: 50%;
+  top: 70%;
+  font-size: 2vw;
+  color: rgb(7, 7, 7);
+  background-color: rgb(226, 223, 6);
+  
+  position:absolute;
+  visibility: hidden;
+}
+
+
+
+
+#f111{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14vh;
+  width: 4.9vw;
+  left: 20.5%;
+  top: 56%;
+  visibility: hidden;
   animation:  2s ease-in-out infinite;
 }
 
+
+#f222{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14vh;
+  width: 4.9vw;
+  left: 27%;
+  top: 56%;  
+  visibility: hidden;
+
+}
+#f333{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14vh;
+  width: 5vw;
+  left: 34%;
+  top: 56%;  
+  visibility: hidden;
+
+}
+#f444{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14vh;
+  width: 5vw;
+  left: 41%;
+  top: 56%;  
+  visibility: hidden;
+
+}
+#f555v{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14vh;
+  width: 5vw;
+  left: 48%;
+  top: 56%;  
+  visibility:hidden;
+
+}
+
+#knob3rd{
+  height: 2vh;
+  width: 2vw;
+  position: absolute;
+  right: 31%;
+  top: 43%;
+  cursor: pointer;
+ 
+  visibility: hidden;
+}
+#droptaitration111{
+  height: 2vh;
+  width: 1vw;
+  position: absolute;
+  right: 32.6%;
+  top: 52.5%;
+  transition: all;
+  transition-duration: 1S;
+  visibility: hidden;/*************already hidden*******************/
+}
+#p111{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14vh;
+  width: 5vw;
+  left: 64.2%;
+  top: 56%;
+  opacity: 0%;
+  visibility: hidden;
+  animation:  2s ease-in-out infinite;
+}
+
+#p222{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14vh;
+  width: 5vw;
+  left: 64.1%;
+  top: 56%;
+  opacity: 0%;
+  visibility: hidden;
+  animation:  2s ease-in-out infinite;
+} 
+#p333{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14vh;
+  width: 5vw;
+  left: 64.1%;
+  top: 56%;
+  opacity:0%;
+  visibility: hidden;
+  animation:  1s ease-in-out infinite;
+}
+#p444{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14vh;
+  width: 5vw;
+  left: 64.1%;
+  top: 56%;
+  opacity: 0%;
+  visibility: hidden;
+  animation:  2s ease-in-out infinite;
+}
+#p555{
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  position: absolute;
+  height: 14vh;
+  width: 5vw;
+  left: 64.1%;
+  top: 56%;
+  opacity: 0%;
+  visibility: hidden;
+  animation:  2s ease-in-out infinite;
+}
+#arrowblue222{
+  height: 7vh;
+  width: 4vw;
+  position: absolute;
+  right: 26%;
+  top: 44%;
+  rotate: -90deg;
+  visibility: hidden;/*************already hidden*******************/
+}
+#arrowblue111{
+  height: 7vh;
+  width: 4vw;
+  position: absolute;
+  right: 77%;
+  top: 75%;
+  rotate: -1deg;
+  visibility:hidden;/*************already hidden*******************/
+}
+#hand111{
+  position: absolute;
+  height: 8%;
+  width: 6%;
+  transition: all;
+  transition-duration: 1s;
+  animation: blink 2s linear infinite;
+  /* animation-iteration-count: infinite; */
+  visibility: hidden;/*************already hidden*******************/
+  rotate: 180deg;
+
+}
+/*table*/
+#table111f{
+  position:absolute;
+  height: 27%;
+    width: 25%;
+    left: 0.5%;
+    visibility: hidden;
+    top: 10%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(12, 15, 15);
+}  
+ table, th,td {
+  border: 1px solid black;
+  border-collapse:separate;
+  align-items: center;
+  
+  
+  background-color: rgb(130, 199, 199);
+  
+}
+#heading33{
+  color:rgb(128, 9, 82);
+  font-size: x-large;
+  position:absolute;
+  left: 0.5%;
+  visibility: hidden;
+  top: 1%;
+}
+.center111 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  
+}
+td {
+  text-align: center;
+} 
+/*********************filling table*********************/
+
+table, th,td {
+  border: 1px solid black;
+  border-collapse:separate;
+  
+  background-color: #81cfdd;
+
+} 
+ /* body{
+ 
+  background-image: url(images/wood-texture-background-free-vector.jpg);
+ left: 10%; 
+}  */
+
+
+
+
+#submitresult{
+  background-color: #f8a813ea;
+  position: absolute;
+  font-size: 1.3vw;
+  border-radius: 30%;
+  height:6%;
+  width:6%;
+  visibility: hidden;
+  top:93%;
+  left:90%;
+}
+ #he1{
+  left: 1%;
+  top: 1%;
+  
+  color: rgb(229, 255, 0);
+  font-size: large;
+  position: absolute;
+  visibility: hidden;
+} 
+#he2{
+  left: 50%;
+  top: 1%;
+  color: rgb(229, 255, 0);
+  font-size: large;
+  visibility: hidden;
+  position: absolute;
+}  
+#he3{
+  width: 60%;
+  left: 3%;
+  top: 83%;
+  color:rgb(229, 255, 0);
+  font-size: large;
+  position: absolute;
+  visibility: hidden;
+} 
+#he33{
+  width: 60%;
+  left: 3%;
+  top: 90%;
+  color: rgb(238, 255, 7);
+  font-size: large;
+  position: absolute;
+  visibility: hidden;
+} 
+#he0{
+ 
+  position: absolute;
+  width: 35%;
+  color: rgb(245, 245, 214);
+  font-size: medium;
+  left: 67%;
+  top: 70%;
+  height:20%;
+  visibility: hidden;
+ 
+
+  
+}
+
+
+td {
+  text-align: center;
+  
+}
+.enter1{
+
+  background-color: #81cfdd;
+  width: 80%;
+  text-align: center;
+}
+
+
+#table111{
+  border-collapse: inherit;
+  position: absolute;
+  width: 40%;
+  left: 3%;
+  top: 7%;
+  height:4%;
+  visibility: hidden;
+}
+#table222{
+  border-collapse: inherit;
+  position: absolute;
+  width: 40%;
+  left: 58%;
+  top: 7%;
+  height:4%;
+  visibility: hidden;
+  
+} 
+#table333{
+  border-collapse: inherit;
+  position: absolute;
+  width: 40%;
+  left: 3%;
+  top: 40%;
+  height:35%;
+  visibility: hidden;
+  
+}
+
+#usertable{
+  border-collapse: inherit;
+  position: absolute;
+  width: 20%;
+  left: 45%;
+  top: 40%;
+  height:40%;
+  visibility: hidden;
+  
+  /* visibility:hidden; */
+}
+ .myinput{
+  width:50%;
+  height: 100%;
+  font-size: 1.5vw;
+  text-align: center;
+  
+ /* box-sizing: border-box;*/
+}
+#image{
+position: absolute;
+width: 30%;
+left: 68%;
+top: 40%;
+height:30%;
+visibility: hidden;
+} 

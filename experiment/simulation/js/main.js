@@ -1,6 +1,4 @@
 
- 
-
 var weingimg=document.querySelector("#hweingimage")
 var conicalflaskimg=document.querySelector("#hemptyconicalflask")
 var roundflaskimg=document.querySelector("#hemptyroundflsk")
@@ -15,8 +13,9 @@ var emptypatrydiskimg=document.querySelector("#hemptypatrydiskimage")
 var activechr=document.querySelector("#hpetrydiskchar")
 var kippiimg=document.querySelector("#hkippiimage")
 var indicatorimg=document.querySelector("#hactivatordroperimage")
+var step1=document.querySelector("#beaker")
+var step1=document.querySelector("#beaker1")
 
-var s=0;
 var hovt = document.querySelector("#hovt")
 
 var hcounter=0
@@ -225,7 +224,12 @@ indicatorimg.addEventListener("mouseout",function(){
     hovt.style.visibility="hidden"
 })
 
-
+/*var s=0;
+function next(){
+    if(s==0){
+        step1.style.visibility="hidden";
+    }
+}*/
 /*function steper(){
     if(hcounter==14){
         console.log(hcounter)
@@ -239,12 +243,5 @@ indicatorimg.addEventListener("mouseout",function(){
     }
 
 }*/
-function next(){
-    if (s==0){
-        window.open("step1.html")
-       
-    }
-    
-}
 
 
