@@ -2,12 +2,12 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "1)Adsorption is a process that occurs when?",
+      "question": "1)Adsorption of a gas on a solid adsrobent is a process where",
       "answers": {
-        "a": "Only gas solute accumulates on the surface of a solid",
-        "b": "Only liquid solute accumulates on the surface of a solid.",
-        "c": "Substance diffuses into liquid or solid from a solution",
-        "d": "Gas or liquid accumulates on the surface of a solid or a liquid forming a molecular or atomic film."
+        "a": "gas molecules accumulate on the surface of a solid",
+        "b": "gas reacts with solid adsorbent",
+        "c": "Gas gets incorporated in the solid",
+        "d": "solid and gas form a mixture"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -19,11 +19,11 @@
       "difficulty": "beginner"
     },
     {
-      "question": "2)Adsorption is a consequence of?",
+      "question": "2)Adsorption is driven by a decrease in",
       "answers": {
         "a": "Surface Energy",
-        "b": "Kinetic Energy",
-        "c": "Potential Energy",
+        "b": "Entropy",
+        "c": "Rotational Energy",
         "d": "Translational energy"
       },
       "explanations": {
@@ -36,12 +36,12 @@
       "difficulty": "beginner"
     },
     {
-      "question": "3)Physisorption is a type in which?",
+      "question": "3)Physisorption is a type of adsorption where the interaction between the adsorbate and adsorbent molecules is based on",
       "answers": {
-        "a": "Van der Waals interation takes place",
-        "b": "Hydrogen bonding takes place",
-        "c": "Dipole-Dipole interacton takes place",
-        "d": "Dipole-Induced dipole takes place"
+        "a": "Van der Waals",
+        "b": "Hydrogen bonding",
+        "c": "Dipole-Dipole interacton forces",
+        "d": "covalent bonding"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -53,12 +53,12 @@
       "difficulty": "beginner"
     },
     {
-      "question": "5)Which adsorption takes place in case of adsorption of acetic acid by charcoal?",
+      "question": "5)The Langmuir isotherm for adsorption of acetic acid by charcoal enables calculation of the",
       "answers": {
-        "a": "BET isotherm",
-        "b": "Freundlich isotherm",
-        "c": "Langmuir isotherm",
-        "d": "None of the above"
+        "a": "rate constant of adsorption",
+        "b": "rate constant of desorption",
+        "c": "interaction energy of adsorption",
+        "d": "Langmuir adsorption constant"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -66,7 +66,7 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "d",
       "difficulty": "beginner"
     }
   ]

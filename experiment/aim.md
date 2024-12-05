@@ -1,1 +1,2 @@
-To determine the order of the reaction and rate of the reaction
+To determine the parameters for adsorption of acetic acid on Charcoal
+
