@@ -252,7 +252,48 @@ var message=[
   var engbtn = document.querySelector("#eng")
   var headertext = document.querySelector("#headertext")
   var langselector = document.querySelector("#langselector")
-  
+  var messcounter = 0;
+var mes = document.querySelector("#update");
+var nextButton = document.querySelector("#nextButton");
+var magnet = document.querySelector("#magnatic");
+
+function update() {
+    if (messcounter < message.length) {
+        mes.innerText = message[messcounter];
+    } else {
+        mes.innerText = "Simulation Completed";
+    }
+    messcounter++;
+}
+
+function nextpage() {
+    if (currentStepCompleted()) {
+        update();
+    } else {
+        alert("Please complete the current step before proceeding.");
+    }
+}
+
+function currentStepCompleted() {
+    // Logic to check if required actions are completed before proceeding
+    switch (messcounter) {
+        case 3:
+            return magnet.style.visibility === "visible";
+        case message.length - 1:
+            return false; // Prevents further navigation after completion
+        default:
+            return true;
+    }
+}
+
+// Ensure magnet is visible at the correct step
+function showMagnet() {
+    magnet.style.visibility = "visible";
+}
+
+// Initialize the first message
+update();
+
 
   setTimeout(() => {
     update;
