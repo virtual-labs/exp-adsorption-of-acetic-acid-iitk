@@ -1155,213 +1155,200 @@ function act3(){
  
 /**************************************************************step3 taitration 3*******************************/
 
-
 var k;
-var new1 = document.querySelector("#pinkk1")
-
-var pflask2 = document.querySelector("#pinkk2")
-var pflask3 = document.querySelector("#pinkk3")
+var new1 = document.querySelector("#pinkk1");
+var pflask2 = document.querySelector("#pinkk2");
+var pflask3 = document.querySelector("#pinkk3");
 var orgl = document.querySelector("#orgflsk");
-var aql = document.querySelector("#flask2")
-var flask3 = document.querySelector("#flaskk3")
-var drpp = document.querySelector("#dropp")
-
-
+var aql = document.querySelector("#flask2");
+var flask3 = document.querySelector("#flaskk3");
+var drpp = document.querySelector("#dropp");
 
 function titration1() {
   if (k == 0) {
     console.log(s);
-    orgl.style.transform = "translate(680%,0%) ";
-     volumeo1.innerHTML ="10";
-     update()
+    orgl.style.transform = "translate(680%,0%)";
+    volumeo1.innerHTML = "10";
+    update();
   }
-k=1
-  
+  k = 1;
 }
 
 function titrate() {
   if (k == 1) {
-    drpp.style.visibility = "visible"
-    drpp.style.transform = "translate(0%,700%) ";
+    drpp.style.visibility = "visible";
+    drpp.style.transform = "translate(0%,700%)";
 
     setTimeout(() => {
-      drpp.style.visibility = "hidden"
+      drpp.style.visibility = "hidden";
     }, 200);
 
     setTimeout(() => {
-      drpp.style.transform = "translate(0%,0%)"
-      
-    }, 1000);
-    k=2;
-
-    
-
-  }
-  else if(k==2){
-    drpp.style.visibility = "visible"
-    drpp.style.transform = "translate(0%,700%) ";
-
-    setTimeout(() => {
-      drpp.style.visibility = "hidden"
-    }, 200);
-
-    setTimeout(() => {
-      drpp.style.transform = "translate(0%,0%)"
+      drpp.style.transform = "translate(0%,0%)";
     }, 1000);
 
-    setTimeout(() => {
-     /* new1.style.opacity = "20%"
-      new1.style.opacity = "60%"*/
-      new1.style.opacity = "100%"
-      orgl.style.visibility = "hidden";
-
-      update()
-      
-     
-
-    }, 2500);
-    k=3;
-   
-
+    k = 2;
   }
+
+ else if (k == 2) {
+  drpp.style.visibility = "visible";
+  drpp.style.transform = "translate(0%,700%)";
+
+  setTimeout(() => {
+    drpp.style.visibility = "hidden";
+  }, 200);
+
+  setTimeout(() => {
+    drpp.style.transform = "translate(0%,0%)";
+  }, 1000);
+
+  setTimeout(() => {
+    new1.style.opacity = "100%";          // show pink liquid
+    orgl.style.visibility = "hidden";     // hide original flask
+
+    // ✅ Apply one-time shake to pink flask
+    new1.classList.remove("flask-shake");
+    void new1.offsetWidth;
+    new1.classList.add("flask-shake");
+
+    update();
+  }, 2500);
+
+  k = 3;
+}
+
+
   else if (k == 5) {
-    drpp.style.visibility = "visible"
-    drpp.style.transform = "translate(0%,700%) ";
+    drpp.style.visibility = "visible";
+    drpp.style.transform = "translate(0%,700%)";
 
     setTimeout(() => {
-      drpp.style.visibility = "hidden"
+      drpp.style.visibility = "hidden";
     }, 200);
 
     setTimeout(() => {
-      drpp.style.transform = "translate(0%,0%)"
-    }, 1000);
-    k=6;
-
-   
-
-  }
-  else if(k==6){
-    drpp.style.visibility = "visible"
-    drpp.style.transform = "translate(0%,700%) ";
-
-    setTimeout(() => {
-      drpp.style.visibility = "hidden"
-    }, 200);
-
-    setTimeout(() => {
-      drpp.style.transform = "translate(0%,0%)"
+      drpp.style.transform = "translate(0%,0%)";
     }, 1000);
 
-    setTimeout(() => {
-      pflask2.style.opacity = "20%"
-      pflask2.style.opacity = "60%"
-      pflask2.style.opacity = "100%"
-      aql.style.visibility = "hidden";
-      update()
-     
-
-    }, 2500);
-    k=7;
-
+    k = 6;
   }
+
+ else if (k == 6) {
+  drpp.style.visibility = "visible";
+  drpp.style.transform = "translate(0%,700%)";
+
+  setTimeout(() => {
+    drpp.style.visibility = "hidden";
+  }, 200);
+
+  setTimeout(() => {
+    drpp.style.transform = "translate(0%,0%)";
+  }, 1000);
+
+  setTimeout(() => {
+    pflask2.style.opacity = "100%";
+    aql.style.visibility = "hidden";
+
+    // 🧪 Lab-style Shake for pinkk2
+    pflask2.classList.remove("flask-shake");
+    void pflask2.offsetWidth;
+    pflask2.classList.add("flask-shake");
+
+    update();
+  }, 2500);
+
+  k = 7;
+}
+
+
   else if (k == 9) {
-    drpp.style.visibility = "visible"
-    drpp.style.transform = "translate(0%,700%) ";
+    drpp.style.visibility = "visible";
+    drpp.style.transform = "translate(0%,700%)";
 
     setTimeout(() => {
-      drpp.style.visibility = "hidden"
+      drpp.style.visibility = "hidden";
     }, 200);
 
     setTimeout(() => {
-      drpp.style.transform = "translate(0%,0%)"
-     
+      drpp.style.transform = "translate(0%,0%)";
     }, 1000);
 
-   k=10
-
+    k = 10;
   }
-  else if(k==10){
-    drpp.style.visibility = "visible"
-    drpp.style.transform = "translate(0%,700%) ";
 
-    setTimeout(() => {
-      drpp.style.visibility = "hidden"
-    }, 200);
+else if (k == 10) {
+  drpp.style.visibility = "visible";
+  drpp.style.transform = "translate(0%,700%)";
 
-    setTimeout(() => {
-      drpp.style.transform = "translate(0%,0%)"
-    }, 1000);
+  setTimeout(() => {
+    drpp.style.visibility = "hidden";
+  }, 200);
 
-    setTimeout(() => {
-      pflask3.style.opacity = "20%"
-      pflask3.style.opacity = "60%"
-      pflask3.style.opacity = "100%"
-      flask3.style.visibility = "hidden";
-      update()
-     
-      
+  setTimeout(() => {
+    drpp.style.transform = "translate(0%,0%)";
+  }, 1000);
 
-    }, 2500);
-    k=11;
+  setTimeout(() => {
+    pflask3.style.opacity = "100%";
+    flask3.style.visibility = "hidden";
 
-  }
-  
-  
+    // 🧪 Lab-style Shake for pinkk3
+    pflask3.classList.remove("flask-shake");
+    void pflask3.offsetWidth;
+    pflask3.classList.add("flask-shake");
+
+    update();
+  }, 2500);
+
+  k = 11;
+}
 
 }
-function pink1(){
-  if(k==3){
+
+function pink1() {
+  if (k == 3) {
     new1.style.transform = "translate(-680%,0%)";
-    volumen1.innerHTML ="21";
-    update()
-    k=4;
+    volumen1.innerHTML = "21";
+    update();
+    k = 4;
   }
 }
-function pink2(){
-  if(k==7){
+
+function pink2() {
+  if (k == 7) {
     pflask2.style.transform = "translate(-480%,0%)";
-    volumen2.innerHTML ="21";
-    update()
-    k=8
+    volumen2.innerHTML = "21";
+    update();
+    k = 8;
   }
 }
-function pink3(){
-  if(k==11){
+
+function pink3() {
+  if (k == 11) {
     pflask3.style.transform = "translate(-280%,0%)";
-    volumen3.innerHTML ="21";
-    update()
-    pag=3;
-    
+    volumen3.innerHTML = "21";
+    update();
+    pag = 3;
   }
 }
-
-
-
-
 
 function titration2() {
   if (k == 4) {
-    aql.style.transform = "translate(480%,0%) ";
-    volumeo2.innerHTML ="10";
-    update()
-    k=5;
-
+    aql.style.transform = "translate(480%,0%)";
+    volumeo2.innerHTML = "10";
+    update();
+    k = 5;
   }
-
 }
-
 
 function titration3() {
   if (k == 8) {
-    flask3.style.transform = "translate(280%,0%) ";
-    volumeo3.innerHTML ="10";
- update()
- 
-k=9;
+    flask3.style.transform = "translate(280%,0%)";
+    volumeo3.innerHTML = "10";
+    update();
+    k = 9;
   }
-
 }
-
 
 /************************************activetor5*****************************88 */
 
@@ -1536,6 +1523,9 @@ function droper5(){
    pag=4;
  }
 }
+
+
+
 /********************************taitration5**************************8 */
 var p ;
 var pf1 = document.querySelector("#p1")
@@ -1587,33 +1577,34 @@ function titrate5f() {
     
 
   }
-  else if(p==2){
-    drpt.style.visibility = "visible"
-    drpt.style.transform = "translate(0%,700%) ";
+ else if (p == 2) {
+  drpt.style.visibility = "visible";
+  drpt.style.transform = "translate(0%,700%)";
 
-   setTimeout(() => {
-      drpt.style.visibility = "hidden"
-     
-    }, 200);
-   
-    setTimeout(() => {
-       drpt.style.transform = "translate(0%,0%)"
-      
-     }, 1000);
-     setTimeout(() => {
-      pf1.style.opacity = "20%"
-      pf1.style.opacity = "60%"
-      pf1.style.opacity = "100%"
-      orglflask.style.visibility = "hidden";
-      update()
+  setTimeout(() => {
+    drpt.style.visibility = "hidden";
+  }, 200);
 
-   }, 2500);
+  setTimeout(() => {
+    drpt.style.transform = "translate(0%,0%)";
+  }, 1000);
 
-    
-    p=3;
-   
+  setTimeout(() => {
+    pf1.style.opacity = "100%";
+    orglflask.style.visibility = "hidden";
 
-  }
+    // ✅ Shake effect for pf1
+    pf1.classList.remove("flask-shake");
+    void pf1.offsetWidth;
+    pf1.classList.add("flask-shake");
+
+    update();
+  }, 2500);
+
+  p = 3;
+}
+
+
   else if (p == 5) {
     drpt.style.visibility = "visible"
     drpt.style.transform = "translate(0%,700%) ";
@@ -1632,30 +1623,34 @@ function titrate5f() {
    
 
   }
-  else if(p==6){
-    drpt.style.visibility = "visible"
-    drpt.style.transform = "translate(0%,700%) ";
+else if (p == 6) {
+  drpt.style.visibility = "visible";
+  drpt.style.transform = "translate(0%,700%)";
 
-    setTimeout(() => {
-      drpt.style.visibility = "hidden"
+  setTimeout(() => {
+    drpt.style.visibility = "hidden";
+  }, 200);
 
-    }, 200);
+  setTimeout(() => {
+    drpt.style.transform = "translate(0%,0%)";
+  }, 1000);
 
-    setTimeout(() => {
-       drpt.style.transform = "translate(0%,0%)"
-     }, 1000);
+  setTimeout(() => {
+    pf2.style.opacity = "100%";
+    aq2.style.visibility = "hidden";
 
-    setTimeout(() => {
-      pf2.style.opacity = "20%"
-      pf2.style.opacity = "60%"
-      pf2.style.opacity = "100%"
-      aq2.style.visibility = "hidden";
-      update()
+    // ✅ Shake effect for pf2
+    pf2.classList.remove("flask-shake");
+    void pf2.offsetWidth;
+    pf2.classList.add("flask-shake");
 
-    }, 2500);
-    p=7;
+    update();
+  }, 2500);
 
-  }
+  p = 7;
+}
+
+
   else if (p == 9) {
     drpt.style.visibility = "visible"
     drpt.style.transform = "translate(0%,700%) ";
@@ -1672,32 +1667,34 @@ function titrate5f() {
    p=10
 
   }
-  else if(p==10){
-    drpt.style.visibility = "visible"
-    drpt.style.transform = "translate(0%,700%) ";
+else if (p == 10) {
+  drpt.style.visibility = "visible";
+  drpt.style.transform = "translate(0%,700%)";
 
-    setTimeout(() => {
-      drpt.style.visibility = "hidden"
+  setTimeout(() => {
+    drpt.style.visibility = "hidden";
+  }, 200);
 
-    }, 200);
+  setTimeout(() => {
+    drpt.style.transform = "translate(0%,0%)";
+  }, 1000);
 
-    setTimeout(() => {
-       drpt.style.transform = "translate(0%,0%)"
-     }, 1000);
+  setTimeout(() => {
+    pf3.style.opacity = "100%";
+    aq3.style.visibility = "hidden";
 
-    setTimeout(() => {
-      pf3.style.opacity = "20%"
-      pf3.style.opacity = "60%"
-      pf3.style.opacity = "100%"
-      aq3.style.visibility = "hidden";
-      update()
-     
-      
+    // ✅ Shake effect for pf3
+    pf3.classList.remove("flask-shake");
+    void pf3.offsetWidth;
+    pf3.classList.add("flask-shake");
 
-    }, 2500);
-    p=11;
+    update();
+  }, 2500);
 
-  }
+  p = 11;
+}
+
+
   else if (p == 13) {
     drpt.style.visibility = "visible"
     drpt.style.transform = "translate(0%,700%) ";
@@ -1716,31 +1713,32 @@ function titrate5f() {
    
 
   }
-  else if(p==14){
-    drpt.style.visibility = "visible"
-    drpt.style.transform = "translate(0%,700%) ";
+else if (p == 14) {
+  drpt.style.visibility = "visible";
+  drpt.style.transform = "translate(0%,700%)";
 
-    setTimeout(() => {
-      drpt.style.visibility = "hidden"
+  setTimeout(() => {
+    drpt.style.visibility = "hidden";
+  }, 200);
 
-    }, 200);
+  setTimeout(() => {
+    drpt.style.transform = "translate(0%,0%)";
+  }, 1000);
 
-    setTimeout(() => {
-       drpt.style.transform = "translate(0%,0%)"
-     }, 1000);
+  setTimeout(() => {
+    pf4.style.opacity = "100%";
+    aq4.style.visibility = "hidden";
 
-    setTimeout(() => {
-      pf4.style.opacity = "20%"
-      pf4.style.opacity = "60%"
-      pf4.style.opacity = "100%"
-      aq4.style.visibility = "hidden";
-      update()
+    // ✅ Shake effect for pf4
+    pf4.classList.remove("flask-shake");
+    void pf4.offsetWidth;
+    pf4.classList.add("flask-shake");
 
-    }, 2500);
-    p=15;
+    update();
+  }, 2500);
 
-  }
-  
+  p = 15;
+}  
   
   else if (p == 17) {
     drpt.style.visibility = "visible"
@@ -1760,30 +1758,32 @@ function titrate5f() {
    
 
   }
-  else if(p==18){
-    drpt.style.visibility = "visible"
-    drpt.style.transform = "translate(0%,700%) ";
+else if (p == 18) {
+  drpt.style.visibility = "visible";
+  drpt.style.transform = "translate(0%,700%)";
 
-    setTimeout(() => {
-      drpt.style.visibility = "hidden"
+  setTimeout(() => {
+    drpt.style.visibility = "hidden";
+  }, 200);
 
-    }, 200);
+  setTimeout(() => {
+    drpt.style.transform = "translate(0%,0%)";
+  }, 1000);
 
-    setTimeout(() => {
-       drpt.style.transform = "translate(0%,0%)"
-     }, 1000);
+  setTimeout(() => {
+    pf5.style.opacity = "100%";
+    aq5v.style.visibility = "hidden";
 
-    setTimeout(() => {
-      pf5.style.opacity = "20%"
-      pf5.style.opacity = "60%"
-      pf5.style.opacity = "100%"
-      aq5v.style.visibility = "hidden";
-      update()
+    // ✅ Shake effect for pf5
+    pf5.classList.remove("flask-shake");
+    void pf5.offsetWidth;
+    pf5.classList.add("flask-shake");
 
-    }, 2500);
-    p=19;
+    update();
+  }, 2500);
 
-  }
+  p = 19;
+}
   
   
 
@@ -2987,231 +2987,215 @@ v=1
 }
 
 function titrate3rd() {
-  if (v == 1) {
-    drpt111.style.visibility = "visible"
-    drpt111.style.transform = "translate(0%,700%) ";
+if (v == 1) {
+  drpt111.style.visibility = "visible";
+  drpt111.style.transform = "translate(0%,700%)";
 
-    setTimeout(() => {
-      drpt111.style.visibility = "hidden"
-      
-    }, 200);
-    
-    setTimeout(() => {
-       drpt111.style.transform = "translate(0%,0%)"
+  setTimeout(() => {
+    drpt111.style.visibility = "hidden";
+  }, 200);
 
-     }, 1000);
+  setTimeout(() => {
+    drpt111.style.transform = "translate(0%,0%)";
+  }, 1000);
 
-     
-    v=2;
+  v = 2;
+}
 
-    
+else if (v == 2) {
+  drpt111.style.visibility = "visible";
+  drpt111.style.transform = "translate(0%,700%)";
 
-  }
-  else if(v==2){
-    drpt111.style.visibility = "visible"
-    drpt111.style.transform = "translate(0%,700%) ";
+  setTimeout(() => {
+    drpt111.style.visibility = "hidden";
+  }, 200);
 
-    setTimeout(() => {
-      drpt111.style.visibility = "hidden"
-      
-    }, 200);
-    
-    setTimeout(() => {
-       drpt111.style.transform = "translate(0%,0%)"
+  setTimeout(() => {
+    drpt111.style.transform = "translate(0%,0%)";
+  }, 1000);
 
-     }, 1000);
-     setTimeout(() => {
-      pf111.style.opacity = "20%"
-      pf111.style.opacity = "60%"
-      pf111.style.opacity = "100%"
-      orglflask111.style.visibility = "hidden";
-      update()
+  setTimeout(() => {
+    pf111.style.opacity = "100%";
+    orglflask111.style.visibility = "hidden";
 
-   }, 2500);
+    // ✅ Shake effect for pf111
+    pf111.classList.remove("flask-shake");
+    void pf111.offsetWidth;
+    pf111.classList.add("flask-shake");
 
-    
-    v=3;
-   
+    update();
+  }, 2500);
 
-  }
-  else if (v == 5) {
-    drpt111.style.visibility = "visible"
-    drpt111.style.transform = "translate(0%,700%) ";
+  v = 3;
+}
 
-    setTimeout(() => {
-      drpt111.style.visibility = "hidden"
-      
-    }, 200);
-    
-    setTimeout(() => {
-       drpt111.style.transform = "translate(0%,0%)"
+else if (v == 5) {
+  drpt111.style.visibility = "visible";
+  drpt111.style.transform = "translate(0%,700%)";
 
-     }, 1000);
+  setTimeout(() => {
+    drpt111.style.visibility = "hidden";
+  }, 200);
 
-    v=6;
+  setTimeout(() => {
+    drpt111.style.transform = "translate(0%,0%)";
+  }, 1000);
 
-   
+  v = 6;
+}
 
-  }
-  else if(v==6){
-    drpt111.style.visibility = "visible"
-    drpt111.style.transform = "translate(0%,700%) ";
+else if (v == 6) {
+  drpt111.style.visibility = "visible";
+  drpt111.style.transform = "translate(0%,700%)";
 
-    setTimeout(() => {
-      drpt111.style.visibility = "hidden"
-      
-    }, 200);
-    
-    setTimeout(() => {
-       drpt111.style.transform = "translate(0%,0%)"
+  setTimeout(() => {
+    drpt111.style.visibility = "hidden";
+  }, 200);
 
-     }, 1000);
+  setTimeout(() => {
+    drpt111.style.transform = "translate(0%,0%)";
+  }, 1000);
 
-    setTimeout(() => {
-      pf222.style.opacity = "20%"
-      pf222.style.opacity = "60%"
-      pf222.style.opacity = "100%"
-      aq222.style.visibility = "hidden";
-      update()
+  setTimeout(() => {
+    pf222.style.opacity = "100%";
+    aq222.style.visibility = "hidden";
 
-    }, 2500);
-    v=7;
+    // ✅ Shake effect for pf222
+    pf222.classList.remove("flask-shake");
+    void pf222.offsetWidth;
+    pf222.classList.add("flask-shake");
 
-  }
-  else if (v == 9) {
-    drpt111.style.visibility = "visible"
-    drpt111.style.transform = "translate(0%,700%) ";
+    update();
+  }, 2500);
 
-    setTimeout(() => {
-      drpt111.style.visibility = "hidden"
-      
-    }, 200);
-    
-    setTimeout(() => {
-       drpt111.style.transform = "translate(0%,0%)"
+  v = 7;
+}
 
-     }, 1000);
+else if (v == 9) {
+  drpt111.style.visibility = "visible";
+  drpt111.style.transform = "translate(0%,700%)";
 
-   v=10
+  setTimeout(() => {
+    drpt111.style.visibility = "hidden";
+  }, 200);
 
-  }
-  else if(v==10){
-    drpt111.style.visibility = "visible"
-    drpt111.style.transform = "translate(0%,700%) ";
+  setTimeout(() => {
+    drpt111.style.transform = "translate(0%,0%)";
+  }, 1000);
 
-    setTimeout(() => {
-      drpt111.style.visibility = "hidden"
-      
-    }, 200);
-    
-    setTimeout(() => {
-       drpt111.style.transform = "translate(0%,0%)"
+  v = 10;
+}
 
-     }, 1000);
+else if (v == 10) {
+  drpt111.style.visibility = "visible";
+  drpt111.style.transform = "translate(0%,700%)";
 
-    setTimeout(() => {
-      pf333.style.opacity = "20%"
-      pf333.style.opacity = "60%"
-      pf333.style.opacity = "100%"
-      aq333.style.visibility = "hidden";
-      update()
-     
-      
+  setTimeout(() => {
+    drpt111.style.visibility = "hidden";
+  }, 200);
 
-    }, 2500);
-    v=11;
+  setTimeout(() => {
+    drpt111.style.transform = "translate(0%,0%)";
+  }, 1000);
 
-  }
-  else if (v == 13) {
-    drpt111.style.visibility = "visible"
-    drpt111.style.transform = "translate(0%,700%) ";
+  setTimeout(() => {
+    pf333.style.opacity = "100%";
+    aq333.style.visibility = "hidden";
 
-    setTimeout(() => {
-      drpt111.style.visibility = "hidden"
-      
-    }, 200);
-    
-    setTimeout(() => {
-       drpt111.style.transform = "translate(0%,0%)"
+    // ✅ Shake effect for pf333
+    pf333.classList.remove("flask-shake");
+    void pf333.offsetWidth;
+    pf333.classList.add("flask-shake");
 
-     }, 1000);
+    update();
+  }, 2500);
 
-    v=14;
+  v = 11;
+}
 
-   
+else if (v == 13) {
+  drpt111.style.visibility = "visible";
+  drpt111.style.transform = "translate(0%,700%)";
 
-  }
-  else if(v==14){
-    drpt111.style.visibility = "visible"
-    drpt111.style.transform = "translate(0%,700%) ";
+  setTimeout(() => {
+    drpt111.style.visibility = "hidden";
+  }, 200);
 
-    setTimeout(() => {
-      drpt111.style.visibility = "hidden"
-      
-    }, 200);
-    
-    setTimeout(() => {
-       drpt111.style.transform = "translate(0%,0%)"
+  setTimeout(() => {
+    drpt111.style.transform = "translate(0%,0%)";
+  }, 1000);
 
-     }, 1000);
+  v = 14;
+}
 
-    setTimeout(() => {
-      pf444.style.opacity = "20%"
-      pf444.style.opacity = "60%"
-      pf444.style.opacity = "100%"
-      aq444.style.visibility = "hidden";
-      update()
+else if (v == 14) {
+  drpt111.style.visibility = "visible";
+  drpt111.style.transform = "translate(0%,700%)";
 
-    }, 2500);
-    v=15;
+  setTimeout(() => {
+    drpt111.style.visibility = "hidden";
+  }, 200);
 
-  }
-  
-  
-  else if (v== 17) {
-    drpt111.style.visibility = "visible"
-    drpt111.style.transform = "translate(0%,700%) ";
+  setTimeout(() => {
+    drpt111.style.transform = "translate(0%,0%)";
+  }, 1000);
 
-    setTimeout(() => {
-      drpt111.style.visibility = "hidden"
-      
-    }, 200);
-    
-    setTimeout(() => {
-       drpt111.style.transform = "translate(0%,0%)"
+  setTimeout(() => {
+    pf444.style.opacity = "100%";
+    aq444.style.visibility = "hidden";
 
-     }, 1000);
+    // ✅ Shake effect for pf444
+    pf444.classList.remove("flask-shake");
+    void pf444.offsetWidth;
+    pf444.classList.add("flask-shake");
 
-    v=18;
+    update();
+  }, 2500);
 
-   
+  v = 15;
+}
 
-  }
-  else if(v==18){
-    drpt111.style.visibility = "visible"
-    drpt111.style.transform = "translate(0%,700%) ";
+else if (v == 17) {
+  drpt111.style.visibility = "visible";
+  drpt111.style.transform = "translate(0%,700%)";
 
-    setTimeout(() => {
-      drpt111.style.visibility = "hidden"
-      
-    }, 200);
-    
-    setTimeout(() => {
-       drpt111.style.transform = "translate(0%,0%)"
+  setTimeout(() => {
+    drpt111.style.visibility = "hidden";
+  }, 200);
 
-     }, 1000);
+  setTimeout(() => {
+    drpt111.style.transform = "translate(0%,0%)";
+  }, 1000);
 
-    setTimeout(() => {
-      pf555.style.opacity = "20%"
-      pf555.style.opacity = "60%"
-      pf555.style.opacity = "100%"
-      aq555.style.visibility = "hidden";
-      update()
+  v = 18;
+}
 
-    }, 2500);
-    v=19;
+else if (v == 18) {
+  drpt111.style.visibility = "visible";
+  drpt111.style.transform = "translate(0%,700%)";
 
-  }
+  setTimeout(() => {
+    drpt111.style.visibility = "hidden";
+  }, 200);
+
+  setTimeout(() => {
+    drpt111.style.transform = "translate(0%,0%)";
+  }, 1000);
+
+  setTimeout(() => {
+    pf555.style.opacity = "100%";
+    aq555.style.visibility = "hidden";
+
+    // ✅ Shake effect for pf555
+    pf555.classList.remove("flask-shake");
+    void pf555.offsetWidth;
+    pf555.classList.add("flask-shake");
+
+    update();
+  }, 2500);
+
+  v = 19;
+}
   
   
 
