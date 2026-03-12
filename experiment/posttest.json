@@ -2,37 +2,63 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "According to Langmuir adsorption Isotherm, the adsorbed layer is?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "to standardize the NaOH solution",
+        "b": "to standardize the acetic acid solution ",
+        "c": "to make sure that titration works",
+        "d": "to standardize the color change"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
+      
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Which indicator was used for the standardization of NaOH by oxalic acid?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Methyl Red",
+        "b": "Bromophenol blue",
+        "c": "Phenolphthalein",
+        "d": "None of the Above"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
+      
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+     {
+      "question": "The Langmuir adsorption isotherm can be expressed as?",
+      "answers": {
+        "a": "x/m=kP1/n",
+        "b": "m = Amax ke/1=kc",
+        "c": "x = P1/n",
+        "d": "None of the above"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+     {
+      "question": "According to Langmuir Adsorption Isotherm, the equilibrium between adsorbate and adsorbent will be?",
+      "answers": {
+        "a": "Dynamic Equilibrium",
+        "b": "Static equilibrium",
+        "c": "No Such equilibrium",
+        "d": "Mixture of Static & dynamic Equilibrium"
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+     {
+      "question": "From Langmuir adsorption isotherm plot of 1/m vs 1/c will be?",
+      "answers": {
+        "a": "Straight line",
+        "b": "Hyperbola",
+        "c": "Parabola",
+        "d": "None of the Above"
+      },
+      
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]

@@ -1,1 +1,16 @@
-### Link your theory in here
+Adsorption is a process that occurs when a gas or liquid solute (adsorbate) accumulates on the surface of a solid or a liquid (adsorbent), forming a molecular or atomic film. It is different from absorption, in which a substance diffuses into a liquid or solid to form a solution. The reverse process is called desorption. Like surface tension, adsorption is a consequence of surface energy. In a bulk material, all the bonding requirements of the constituent atoms of the material are satisfied. But atoms on the (clean) surface experience a bond deficiency, because they are not wholly surrounded by other atoms. Thus it is energetically favorable for them to bond with an adsorbate. The exact nature of the bonding depends on the nature of the species involved, and broadly classified as physisorption or chemisorption.<br>
+
+Physisorption or physical adsorption is a type of adsorption in which the adsorbate adheres to the surface only through Van der Waals (weak intermolecular) interactions. Chemisorption is a type of adsorption whereby a molecule adheres to a surface through the formation of a chemical bond. <br>
+
+Adsorption is usually described through adsorption isotherms, which are functions which connect the amount of adsorbate on the adsorbent, with its pressure (if gas) or concentration (if liquid) at constant temperature. Several  isotherms are used to describe adsorption, such
+as Freundlich isotherm, Langmuir isotherm, BET isotherm, etc. Here we will use the Langmuir isotherm.<br>
+
+For liquids (adsorbate) adsorbed on solids (adsorbent), the Langmuir isotherm can be expressed by:<br> 
+m = (A<sub>max</sub> K<sub>L</sub> c) / (1 + K<sub>L</sub> c) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;eq. 1<br>
+1/m = (1 / (K<sub>L</sub> A<sub>max</sub>)) × (1/c) + 1/A<sub>max</sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;eq. 2<br><br>
+
+where m is the tnumber of moles of adsorbate adsorbed per gram (or kg) of the adsorbent. Amax is the maximal number of moles of adsorbate per gram (or kg) of the adsorbent, K<sub>L</sub> is the adsorption constant and c is the concentration of adsorbate in liquid . By plotting 1/m vs 1/c we get a straight line with slope 1/K<sub>L</sub> Amax and intercept 1/Amax (by using equation (2)). This allows us to calculate the Langmuir adsorption Constant 'K<sub>L</sub>'.<br>
+
+Activated carbon is a material with a very high surface area and is widely used as an adsorbent for the adsorption of organic compounds. A gram of activated carbon can have a surface area of about 500 m² !!.<br>
+
+In this experiment we will determine K<sub>L</sub> and Amax for the acetic acid (adsorbate) adsorption by activated charcoal (adsorbent). We will perform two set of experiments. In the first set we will determine the concentrations of different acetic acid solution by titrating with standard NaOH. In the second experiment, we will add known amount of charcoal in each solution and shake well to let the adsorption happen. After that we will measure the concentration of unadsorbed acetic acid in each solution by the titration. Then, K<sub>L</sub> and Amax will be determined.

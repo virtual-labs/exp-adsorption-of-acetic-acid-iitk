@@ -2,37 +2,51 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "1)Adsorption of a gas on a solid adsrobent is a process where",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "gas molecules accumulate on the surface of a solid",
+        "b": "gas reacts with solid adsorbent",
+        "c": "Gas gets incorporated in the solid",
+        "d": "solid and gas form a mixture"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2)Adsorption is driven by a decrease in",
+      "answers": {
+        "a": "Surface Energy",
+        "b": "Entropy",
+        "c": "Rotational Energy",
+        "d": "Translational energy"
       },
+      
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "3)Physisorption is a type of adsorption where the interaction between the adsorbate and adsorbent molecules is based on",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Van der Waals",
+        "b": "Hydrogen bonding",
+        "c": "Dipole-Dipole interacton forces",
+        "d": "covalent bonding"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4)The Langmuir isotherm for adsorption of acetic acid by charcoal enables calculation of the",
+      "answers": {
+        "a": "rate constant of adsorption",
+        "b": "rate constant of desorption",
+        "c": "interaction energy of adsorption",
+        "d": "Langmuir adsorption constant"
       },
-      "correctAnswer": "c",
+      
+      "correctAnswer": "d",
       "difficulty": "beginner"
     }
   ]
