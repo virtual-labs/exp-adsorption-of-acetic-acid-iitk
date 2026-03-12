@@ -6,7 +6,9 @@ Adsorption is usually described through adsorption isotherms, which are function
 as Freundlich isotherm, Langmuir isotherm, BET isotherm, etc. Here we will use the Langmuir isotherm.<br>
 
 For liquids (adsorbate) adsorbed on solids (adsorbent), the Langmuir isotherm can be expressed by:<br> 
-<img scr ="images/fig1.png"><br>
+m = (A<sub>max</sub> K<sub>L</sub> c) / (1 + K<sub>L</sub> c) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;eq. 1<br>
+1/m = (1 / (K<sub>L</sub> A<sub>max</sub>)) × (1/c) + 1/A<sub>max</sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;eq. 2<br><br>
+
 where m is the tnumber of moles of adsorbate adsorbed per gram (or kg) of the adsorbent. Amax is the maximal number of moles of adsorbate per gram (or kg) of the adsorbent, K<sub>L</sub> is the adsorption constant and c is the concentration of adsorbate in liquid . By plotting 1/m vs 1/c we get a straight line with slope 1/K<sub>L</sub> Amax and intercept 1/Amax (by using equation (2)). This allows us to calculate the Langmuir adsorption Constant 'K<sub>L</sub>'.<br>
 
 Activated carbon is a material with a very high surface area and is widely used as an adsorbent for the adsorption of organic compounds. A gram of activated carbon can have a surface area of about 500 m² !!.<br>

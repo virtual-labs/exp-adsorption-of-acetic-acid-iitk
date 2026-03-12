@@ -9,12 +9,7 @@
         "c": "Gas gets incorporated in the solid",
         "d": "solid and gas form a mixture"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
+      
       "correctAnswer": "d",
       "difficulty": "beginner"
     },
@@ -26,12 +21,7 @@
         "c": "Rotational Energy",
         "d": "Translational energy"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
+      
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
@@ -43,29 +33,19 @@
         "c": "Dipole-Dipole interacton forces",
         "d": "covalent bonding"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
+      
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "5)The Langmuir isotherm for adsorption of acetic acid by charcoal enables calculation of the",
+      "question": "4)The Langmuir isotherm for adsorption of acetic acid by charcoal enables calculation of the",
       "answers": {
         "a": "rate constant of adsorption",
         "b": "rate constant of desorption",
         "c": "interaction energy of adsorption",
         "d": "Langmuir adsorption constant"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
+      
       "correctAnswer": "d",
       "difficulty": "beginner"
     }
